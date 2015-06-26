@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.mediaarea.net/mediatrace"
+    xmlns="http://www.mediaarea.net/mediatrace" elementFormDefault="qualified"
+    version="0.1alpha">
+    <xsd:element name="MediaTrace" type="mediatraceType"/>
+    <xsd:complexType name="mediatraceType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="items"  type="itemsType"  minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="itemsType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="items"  type="itemsType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="item"   type="itemType"   minOccurs="0" maxOccurs="unbounded" />
+        </xsd:choice>
+        <xsd:attributeGroup ref="itemAttributeSet" />
+    </xsd:complexType>
+    <xsd:complexType name="itemType">
+       <xsd:annotation>
+          <xsd:documentation></xsd:documentation>
+       </xsd:annotation>
+       <xsd:simpleContent>
+          <xsd:extension base="xsd:string" >
+             <xsd:attributeGroup ref="itemAttributeSet"/>
+          </xsd:extension>
+       </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:attributeGroup name="itemAttributeSet">
+    <xsd:attribute name="offset"  type="xsd:nonNegativeInteger">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="name"    type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info"    type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info2"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info3"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info4"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    </xsd:attributeGroup>
+</xsd:schema>
