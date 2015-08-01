@@ -2,28 +2,28 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://www.mediaarea.net/mediatrace"
     xmlns="http://www.mediaarea.net/mediatrace" elementFormDefault="qualified"
-    version="0.1alpha">
+    version="0.1alpha2">
     <xsd:element name="MediaTrace" type="mediatraceType"/>
     <xsd:complexType name="mediatraceType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="items"  type="itemsType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="version" />
     </xsd:complexType>
-    <xsd:complexType name="itemsType">
+    <xsd:complexType name="blockType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:choice maxOccurs="unbounded">
-            <xsd:element name="items"  type="itemsType"  minOccurs="0" maxOccurs="unbounded" />
-            <xsd:element name="item"   type="itemType"   minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
         </xsd:choice>
         <xsd:attributeGroup ref="itemAttributeSet" />
     </xsd:complexType>
-    <xsd:complexType name="itemType">
+    <xsd:complexType name="dataType">
        <xsd:annotation>
           <xsd:documentation></xsd:documentation>
        </xsd:annotation>
