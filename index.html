@@ -49,9 +49,6 @@
                         <a href="#use">Use</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#faq">FAQ</a>
-                    </li>
-                    <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -86,7 +83,37 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <p>
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut mauris neque. Pellentesque viverra sit amet turpis euismod vehicula. Praesent elementum metus ut magna tristique, et venenatis sapien scelerisque. Suspendisse potenti. Nulla facilisi. Curabitur et tristique mi. Mauris turpis ex, egestas eget aliquet eget, auctor id erat. Sed nec nisl ac lorem venenatis vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus dapibus nisl turpis, nec aliquam metus lobortis id. Aliquam ut dui in metus viverra suscipit. Ut iaculis massa sit amet varius feugiat. Cras sit amet bibendum risus. Phasellus feugiat faucibus leo, id egestas eros tristique nec. Cras tempus neque ultrices mauris tempor posuere.
+MediaTrace is a technical report that expresses the binary architecture of a file as interpreted by MediaArea tools such as MediaInfo, starting in version 0.7.75, and MediaConch, starting in version 2015-08. Although MediaTrace reports may document any file format, the tools that generate it, MediaInfo and MediaConch, are optimized to report on audiovisual formats.
+
+Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI “chunks”, and in Matroska, “elements”. MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <code>&lt;block&gt;</code>. In MediaTrace the contents of the block are called <code>&lt;data&gt;</code>.
+
+For instance, the television information chunk of a DPX file may be interpreted like this. Here a 120 byte block of data (the tv info dpx chunk) within a DPX file is parsed by mediainfo with its contained information categories as data elements which contain its information as expressed in the file with labelling and offset information.
+</p>
+<pre>
+&lt;block offset=&quot;1920&quot; name=&quot;Television information&quot; size=&quot;128&quot;&gt;
+    &lt;data offset=&quot;1920&quot; name=&quot;SMPTE time code&quot;&gt;4294967295&lt;/data&gt;
+    &lt;data offset=&quot;1924&quot; name=&quot;SMPTE user bits&quot;&gt;4294967295&lt;/data&gt;
+    &lt;data offset=&quot;1928&quot; name=&quot;Interlace&quot; moreinfo=&quot;2:1 interlace&quot;&gt;255&lt;/data&gt;
+    &lt;data offset=&quot;1929&quot; name=&quot;Field number&quot;&gt;255&lt;/data&gt;
+    &lt;data offset=&quot;1930&quot; name=&quot;Video signal standard&quot; moreinfo=&quot;Undefined&quot;&gt;0&lt;/data&gt;
+    &lt;data offset=&quot;1931&quot; name=&quot;Zero&quot;&gt;255&lt;/data&gt;
+    &lt;data offset=&quot;1932&quot; name=&quot;Horizontal sampling rate (Hz)&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1936&quot; name=&quot;Vertical sampling rate (Hz)&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1940&quot; name=&quot;Temporal sampling rate or frame rate (Hz)&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1944&quot; name=&quot;Time offset from sync to first pixel (ms)&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1948&quot; name=&quot;Gamma&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1952&quot; name=&quot;Black level code value&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1956&quot; name=&quot;Black gain&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1960&quot; name=&quot;Breakpoint&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1964&quot; name=&quot;Reference white level code value&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1968&quot; name=&quot;Integration time (s)&quot;&gt;0.000&lt;/data&gt;
+    &lt;data offset=&quot;1972&quot; name=&quot;Reserved for future use&quot;&gt;(76 bytes)&lt;/data&gt;
+&lt;/block&gt;
+</pre>
+<p>
+In some cases where the contents of a block are unknown or simply containing a large binary payload then in lieu of displaying the full contents, it will be summarized by its size such as:
+</p>
+<code>&lt;data offset=&quot;2048&quot; name=&quot;Data&quot;&gt;(12441600 bytes)&lt;/data&gt;</code>
 
                     </p>
                 </div>
@@ -140,28 +167,6 @@
     </section>
 
 
-
-    <!-- FAQ Section -->
-    <section id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>FAQ</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <p>
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut mauris neque. Pellentesque viverra sit amet turpis euismod vehicula. Praesent elementum metus ut magna tristique, et venenatis sapien scelerisque. Suspendisse potenti. Nulla facilisi. Curabitur et tristique mi. Mauris turpis ex, egestas eget aliquet eget, auctor id erat. Sed nec nisl ac lorem venenatis vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus dapibus nisl turpis, nec aliquam metus lobortis id. Aliquam ut dui in metus viverra suscipit. Ut iaculis massa sit amet varius feugiat. Cras sit amet bibendum risus. Phasellus feugiat faucibus leo, id egestas eros tristique nec. Cras tempus neque ultrices mauris tempor posuere.
-
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -173,9 +178,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <p>
-
-                    info@mediaarea.net
-
+For questions or more information about this project, contact the MediaArea team at <a href="mailto:info@mediaarea.net">info@mediaarea.net</a>
                     </p>
                 </div>
             </div>
