@@ -81,8 +81,8 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
 
+<p>
 MediaTrace is a technical report that expresses the binary architecture of a file as interpreted by MediaArea tools such as MediaInfo, starting in version 0.7.75, and MediaConch, starting in version 2015-08. Although MediaTrace reports may document any file format, the tools that generate it, MediaInfo and MediaConch, are optimized to report on audiovisual formats.
 
 Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI “chunks”, and in Matroska, “elements”. MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <code>&lt;block&gt;</code>. In MediaTrace the contents of the block are called <code>&lt;data&gt;</code>.
@@ -114,8 +114,10 @@ For instance, the television information chunk of a DPX file may be interpreted 
 In some cases where the contents of a block are unknown or simply containing a large binary payload then in lieu of displaying the full contents, it will be summarized by its size such as:
 </p>
 <code>&lt;data offset=&quot;2048&quot; name=&quot;Data&quot;&gt;(12441600 bytes)&lt;/data&gt;</code>
+<p>
+MediaTrace provides a relatively simple and generic structure to document the complex and diverse internal structure of audiovisual files. MediaInfo’s parsers determine how to label and dissect such data and therefore the MediaTrace values such as name or the granularity of the parsing many change over time. MediaArea makes an effort to keep the names used in MediaTrace consistent with the specifications that define the formats being parsed.
+</p>
 
-                    </p>
                 </div>
             </div>
         </div>
@@ -131,10 +133,9 @@ In some cases where the contents of a block are unknown or simply containing a l
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <ul>
-                        <li><a href="https://github.com/MediaArea/MediaTrace/blob/master/mediatrace.xsd">XSD</a></li>
-                        <li><a href="https://github.com/MediaArea/MediaTrace/blob/master/DataDictionary/DataDictionary.md">Data Dictionary</a></li>
-                    </ul>
+<p>
+An XML Schema for MediaTrace is available at <a href="http://mediaarea.net/mediatrace/mediatrace.xsd">http://mediaarea.net/mediatrace/mediatrace.xsd</a>. A data dictionary is also provided at <a href="https://github.com/MediaArea/MediaTrace/blob/master/DataDictionary/DataDictionary.md">DataDictionary.md</a>. The development history for both the XML Schema and data dictionary are avialable at <a href="http://github.com/mediaarea/mediatrace">Github</a>.
+</p>
                 </div>
             </div>
         </div>
@@ -151,16 +152,10 @@ In some cases where the contents of a block are unknown or simply containing a l
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-
-<h2>With mediainfo</h2>
-
-<code>mediainfo --Details 1 --Output=XML file.mov</code>
-
-
-<h2>With mediaconch</h2>
-
-<code>mediaconch -tt -fx file.mov</code>
-
+                    <h2>With mediainfo</h2>
+                    <code>mediainfo --Details 1 --Output=XML file.mov</code>
+                    <h2>With mediaconch</h2>
+                    <code>mediaconch -tt -fx file.mov</code>
                 </div>
             </div>
         </div>
@@ -177,9 +172,9 @@ In some cases where the contents of a block are unknown or simply containing a l
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <p>
+<p>
 For questions or more information about this project, contact the MediaArea team at <a href="mailto:info@mediaarea.net">info@mediaarea.net</a>
-                    </p>
+</p>
                 </div>
             </div>
         </div>
