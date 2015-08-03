@@ -1,0 +1,1 @@
+Documentation, description, and usage for MediaTrace can be found on [the MediaTrace website](http://mediaarea.github.io/MediaTrace).
