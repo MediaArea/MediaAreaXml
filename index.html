@@ -5,9 +5,8 @@
     <title>MediaTrace</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/css.css">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     
     <!-- HTML5 Shiv and Media Query Support for IE -->
     <!--[if lt IE 9]>
@@ -81,7 +80,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>About</h2>
 <p>
-MediaTrace is a technical report that expresses the binary architecture of a file as interpreted by MediaArea tools such as MediaInfo, starting in version 0.7.75, and MediaConch, starting in version 2015-08. Although MediaTrace reports may document any file format, the tools that generate it, MediaInfo and MediaConch, are optimized to report on audiovisual formats.
+MediaTrace is a technical report that expresses the binary architecture of a file as interpreted by MediaArea tools such as MediaInfo, starting in version 0.7.76, and MediaConch, starting in version 2015-07. Although MediaTrace reports may document any file format, the tools that generate it, MediaInfo and MediaConch, are optimized to report on audiovisual formats.
 
 Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI “chunks”, and in Matroska, “elements”. MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <code>&lt;block&gt;</code>. In MediaTrace the contents of the block are called <code>&lt;data&gt;</code>.
 
@@ -128,7 +127,7 @@ MediaTrace provides a relatively simple and generic structure to document the co
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Files</h2>
 <p>
-An XML Schema for MediaTrace is available at <a href="http://mediaarea.net/mediatrace/mediatrace.xsd">http://mediaarea.net/mediatrace/mediatrace.xsd</a>. A data dictionary is also provided at <a href="https://github.com/MediaArea/MediaTrace/blob/master/DataDictionary/DataDictionary.md">DataDictionary.md</a>. The development history for both the XML Schema and data dictionary are available at <a href="http://github.com/mediaarea/mediatrace">Github</a>.
+An XML Schema for MediaTrace is available at <a href="//mediaarea.net/mediatrace/mediatrace.xsd">https://mediaarea.net/mediatrace/mediatrace.xsd</a>. A data dictionary is also provided at <a href="https://github.com/MediaArea/MediaTrace/blob/master/DataDictionary.md">DataDictionary.md</a>. The development history for both the XML Schema and data dictionary are available at <a href="https://github.com/MediaArea/MediaTrace">Github</a>.
 </p>
 <p>
 Sample files are also <a href="https://github.com/MediaArea/MediaTrace/tree/master/TraceSamples">available on Github here</a>.
@@ -145,9 +144,9 @@ Sample files are also <a href="https://github.com/MediaArea/MediaTrace/tree/mast
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>How to create:</h2>
-                    <h4>With <a href="https://mediaarea.net/MediaInfo">mediainfo</a></h4>
+                    <h4>With <a href="/MediaInfo">mediainfo</a></h4>
                     <code>mediainfo --Details 1 --Output=XML file.mov</code>
-                    <h4>With <a href="https://mediaarea.net/MediaConch">mediaconch</a></h4>
+                    <h4>With <a href="/MediaConch">mediaconch</a></h4>
                     <code>mediaconch -tt -fx file.mov</code>
                 </div>
             </div>
@@ -188,7 +187,7 @@ Developed by <a href="http://www.mediaarea.net">MediaArea</a> in collaboration w
         <div class="navbar">
             <div class="container">
                 <p>
-                &#169; <a href="http://www.mediaarea.net">MediaArea.net</a>
+                &#169; <a href="//mediaarea.net">MediaArea.net</a>
                 </p>
             </div>
         </div>
