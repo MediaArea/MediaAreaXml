@@ -105,6 +105,14 @@ Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
 
+
+Attribute          | moreinfo
+-------------------|----------------------------------------------------
+Definition         | Same as `info` but provides additional contextual information
+Examples           |
+Repeatbility       | Repeatable
+Obligation         | Optional
+
 Attribute          | size
 -------------------|----------------------------------------------------
 Definition         |
