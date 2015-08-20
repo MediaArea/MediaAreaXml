@@ -35,7 +35,7 @@ The data model of MediaTrace XML is compromised of a few, flexible and generic e
     info4
     size
 
-Semantic Unit      | MediaTrace
+Element            | MediaTrace
 -------------------|----------------------------------------------------
 Definition         | The version of MediaTrace
 Examples           | "0.7.74"
@@ -49,7 +49,7 @@ Examples           | "0.7.74"
 Repeatbility       | Not repeatable
 Obligation         | Optional
 
-Semantic Unit      | Block
+Element            | Block
 -------------------|----------------------------------------------------
 Definition         |
 Examples           | "Generic section header"
@@ -57,7 +57,7 @@ Repeatbility       | Repeatable
 Obligation         | Optional
 Usage Notes        | Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <block>.
 
-Attribute          | data
+Element            | data
 -------------------|----------------------------------------------------
 Definition         |
 Examples           |
