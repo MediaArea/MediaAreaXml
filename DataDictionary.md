@@ -44,7 +44,7 @@ Obligation         | Required
 
 Attribute          | version
 -------------------|----------------------------------------------------
-Definition         | The version of MediaTrace
+Definition         | The `version` declares the release number of MediaInfoLib.
 Examples           | "0.7.74"
 Repeatbility       | Not repeatable
 Obligation         | Optional
@@ -66,42 +66,41 @@ Obligation         | Optional
 
 Attribute          | offset
 -------------------|----------------------------------------------------
-Definition         |
-Examples           |
+Definition         | The `offset` expresses the location of the `data` or `block` within a digital file relative to the start of the file and measured in octets.
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | name
 -------------------|----------------------------------------------------
-Definition         |
+Definition         | The `name` attribute stores a label associated with the `block` or `data`. The `name` may provide a human-readable label as gathered from the file format's associated specification or the `name` may provide an unprocessed identifier as used internally within the file's structure.
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | info
 -------------------|----------------------------------------------------
-Definition         |
+Definition         | The `info` attribute stores values that have been gathered or interpretted from the `block` or `data` by MediaInfo's file parsers.
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | info2
 -------------------|----------------------------------------------------
-Definition         |
+Definition         | Same as `info` but provides additional contextual information.
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | info3
 -------------------|----------------------------------------------------
-Definition         |
+Definition         | Same as `info` but provides additional contextual information
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | info4
 -------------------|----------------------------------------------------
-Definition         |
+Definition         | Same as `info` but provides additional contextual information
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
