@@ -5,17 +5,17 @@
 ### Entity Semantic Units
 
 #### MediaTrace
-   version
+    version
 
 #### block
-   data
-   offset
-   name
-   info
-   info2
-   info3
-   info4
-   size
+    data
+    offset
+    name
+    info
+    info2
+    info3
+    info4
+    size
 
 Semantic Unit      | MediaTrace
 -------------------|----------------------------------------------------
