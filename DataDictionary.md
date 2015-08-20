@@ -4,9 +4,11 @@
 
 The MediaTrace Data Dictionary offers documentation and definitions for the MediaTrace XML format. MediaTrace XML is a document which itemizes and describes parts of a digital in a way that allows for a highly comprehensive index of a file. MediaTrace XML is supported as an export document by MediaArea utilities, particularly [MediaInfo](https://mediaarea.net/en/MediaInfo) and [MediaConch](https://mediaarea.net/MediaConch).
 
-Most digital container formats are comprised of elemental blocks; MediaTrace XML is intended as a document representation of that elemental structure to show the hierarchical relationship, size, labelling, and contents of each block. For digital container elements which contain binary data (such as the audiovisual payloard of a media file) MediaTrace XML will document the size but not contents of the payload; however; for elemnental contents such as text strings, short binary values, numbers, and dates MediaTrace will document those values.
+Most digital container formats are comprised of elemental blocks; MediaTrace XML is intended as a document representation of that elemental structure to show the hierarchical relationship, size, labelling, and contents of each block. 
 
-MediaTrace XML is not intended to fully categorize and sumamrize the significant properties of a digital file but focuses on comprehensively documenting the file structure as a whole to the depth possible by MediaInfoLib's file parsers.
+MediaTraceXML will document values of elemental contents such as text strings, short binary values, numbers, and dates. For container elements that contain binary data (such as the audiovisual payload of a media file, for example), MediaTrace will document only the size, and no the contents of the payload itself. 
+
+MediaTrace XML is not intended to fully categorize and sumamrize the significant properties of a digital file, but instead focuses on comprehensively documenting the file structure as a whole, with consideration to the depth possible by MediaInfoLib's file parsers.
 
 ### Additional Resources
 
@@ -18,7 +20,7 @@ Developed by [MediaArea](https://mediaarea.ne) in collaboration with the [Museum
 
 ### Data Model
 
-The data model of MediaTrace XML is compromised of a few, flexible and generic elements to well support methods of documenting highly diverse sets of digital media. The [MediaTrace Schema](https://mediaarea.net/mediatrace/mediatrace.xsd) includes only three elements: `MediaTrace`, `block`, and `data`. The `MediaTrace` element provides the root level element of the document and contains only `block` elements. The `block` element documents a structural piece or elemental component of a digital file's bitstream. The `block` may then contain either other `block` elements and/or `data` elements. The `data` elements document the lowest-level and most granular aspect of the file's contents. Both `block` and `data` elements share an attribute set which contextualizes the information with byte offsets, additional information, and labelling.
+The data model of MediaTrace XML is comprised of several flexible and generic elements to support methods for documenting highly diverse sets of digital media. The [MediaTrace Schema](https://mediaarea.net/mediatrace/mediatrace.xsd) contains only three elements: `MediaTrace`, `block`, and `data`. The `MediaTrace` element provides the root level element of the document and contains only `block` elements. The `block` element documents a structural piece or elemental component of a digital file's bitstream. The `block` may then contain either other `block` elements or `data` elements. The `data` elements document the lowest-level and most granular aspect of the file's contents. Both `block` and `data` elements share an attribute set which contextualizes the information with byte offsets, additional information, and labelling.
 
 ### Semantics
 
@@ -48,7 +50,7 @@ Examples           | `<block offset="719" name="Flags" size="1">`
                    | `</block>`
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        | Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <block>.
+Usage Notes        | Many audiovisual formats are based on chunk-based storage in which a block of data will contain either a data payload or other blocks. In QuickTime parlance, these blocks are called "atoms"; in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a block.
 
 Element            | data
 -------------------|----------------------------------------------------
@@ -59,7 +61,7 @@ Obligation         | Optional
 
 Attribute          | offset
 -------------------|----------------------------------------------------
-Definition         | The `offset` is an integer that expresses the location of the `data` or `block` within a digital file relative to the start of the file and measured in octets.
+Definition         | The `offset` is an integer that expresses the location of the `data` or `block` within a digital file relative to the start of the file, measured in octets.
 Examples           | `0`, `1000`, `298346234`
 Repeatbility       | Repeatable
 Obligation         | Optional
