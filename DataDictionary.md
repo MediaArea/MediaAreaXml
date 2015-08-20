@@ -54,7 +54,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           | "0.7.74"
 Repeatbility       | Not repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Semantic Unit      | Block
@@ -65,7 +65,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           | "Generic section header"
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        | Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <block>.
 
 Attribute          | data
@@ -76,7 +76,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | offset
@@ -87,7 +87,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | name
@@ -98,7 +98,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | info
@@ -109,7 +109,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | info2
@@ -120,7 +120,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | info3
@@ -131,7 +131,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | info4
@@ -142,7 +142,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
 
 Attribute          | size
@@ -153,5 +153,5 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Optional
 Usage Notes        |
