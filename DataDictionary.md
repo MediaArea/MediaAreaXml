@@ -24,43 +24,50 @@ The data model of MediaTrace XML is compromised of a few, flexible and generic e
 
 Element            | MediaTrace
 -------------------|----------------------------------------------------
-Definition         | The version of MediaTrace
-Examples           | "0.7.74"
+Definition         | `MediaTrace` is the root-element of the XML document and contains a structural report of a digital file comprised of logically arranged `block` and `data` elements.
+Examples           | See MediaTrace's [GitHub](https://github.com/mediaarea/mediatrace) repository for example MediaTrace XML documents.
 Repeatbility       | Not repeatable
 Obligation         | Required
 
 Attribute          | version
 -------------------|----------------------------------------------------
 Definition         | The `version` declares the release number of MediaInfoLib.
-Examples           | "0.7.74"
+Examples           | `0.7.74`
 Repeatbility       | Not repeatable
 Obligation         | Optional
 
-Element            | Block
+Element            | block
 -------------------|----------------------------------------------------
-Definition         |
-Examples           | "Generic section header"
+Definition         | The `block` element documents a structural piece or elemental component of a digital file's bitstream. The `block` may then contain either other `block` elements and/or `data` elements.
+Examples           | `<block offset="719" name="Flags" size="1">`
+                   | `    <data offset="726" name="KeyFrame">1</data>`
+                   | `    <data offset="723" name="Reserved">0</data>`
+                   | `    <data offset="722" name="Invisible">0</data>`
+                   | `    <data offset="720" name="Lacing">0</data>`
+                   | `    <data offset="719" name="Discardable">0</data>`
+                   | `</block>`
 Repeatbility       | Repeatable
 Obligation         | Optional
 Usage Notes        | Many audiovisual formats are based on chunk-based storage where a block of data will either contain a data payload or other blocks. In QuickTime parlance these blocks are called atoms, in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a <block>.
 
 Element            | data
 -------------------|----------------------------------------------------
-Definition         |
-Examples           |
+Definition         | The `data` elements document the lowest-level and most granular aspect of the file's contents.
+Examples           | `<data offset="552" name="Data">Lavf56.40.101</data>`
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | offset
 -------------------|----------------------------------------------------
-Definition         | The `offset` expresses the location of the `data` or `block` within a digital file relative to the start of the file and measured in octets.
+Definition         | The `offset` is an integer that expresses the location of the `data` or `block` within a digital file relative to the start of the file and measured in octets.
+Examples           | `0`, `1000`, `298346234`
 Repeatbility       | Repeatable
 Obligation         | Optional
 
 Attribute          | name
 -------------------|----------------------------------------------------
 Definition         | The `name` attribute stores a label associated with the `block` or `data`. The `name` may provide a human-readable label as gathered from the file format's associated specification or the `name` may provide an unprocessed identifier as used internally within the file's structure.
-Examples           |
+Examples           | `TimecodeScale`
 Repeatbility       | Repeatable
 Obligation         | Optional
 
@@ -102,7 +109,7 @@ Obligation         | Optional
 
 Attribute          | size
 -------------------|----------------------------------------------------
-Definition         |
-Examples           |
+Definition         | The `size` is an integer that expresses the amount of data being described by the `data` or `block` element measured in octets.
+Examples           | `11`
 Repeatbility       | Repeatable
 Obligation         | Optional
