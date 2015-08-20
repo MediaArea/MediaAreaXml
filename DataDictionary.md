@@ -43,7 +43,7 @@ Data Constraint    | Container
 Applicability      | Applicable
 Examples           | "0.7.74"
 Repeatbility       | Not repeatable
-Obligation         | Allow minoccurs=0
+Obligation         | Required
 Usage Notes        |
 
 Attribute          | version
