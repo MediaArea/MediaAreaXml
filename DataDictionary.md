@@ -38,31 +38,20 @@ The data model of MediaTrace XML is compromised of a few, flexible and generic e
 Semantic Unit      | MediaTrace
 -------------------|----------------------------------------------------
 Definition         | The version of MediaTrace
-Rationale          | Each trace XML must be tied to a specific version of MediaTrace
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           | "0.7.74"
 Repeatbility       | Not repeatable
 Obligation         | Required
-Usage Notes        |
 
 Attribute          | version
 -------------------|----------------------------------------------------
 Definition         | The version of MediaTrace
-Rationale          | Each trace XML must be tied to a specific version of MediaTrace
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           | "0.7.74"
 Repeatbility       | Not repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Semantic Unit      | Block
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           | "Generic section header"
 Repeatbility       | Repeatable
 Obligation         | Optional
@@ -71,87 +60,55 @@ Usage Notes        | Many audiovisual formats are based on chunk-based storage w
 Attribute          | data
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | offset
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | name
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | info
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | info2
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | info3
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | info4
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
 
 Attribute          | size
 -------------------|----------------------------------------------------
 Definition         |
-Rationale          |
-Data Constraint    | Container
-Applicability      | Applicable
 Examples           |
 Repeatbility       | Repeatable
 Obligation         | Optional
-Usage Notes        |
