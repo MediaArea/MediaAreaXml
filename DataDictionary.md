@@ -8,6 +8,10 @@ Most digital container formats are comprised of elemental blocks; MediaTrace XML
 
 MediaTrace XML is not intended to fully categorize and sumamrize the significant properties of a digital file but focuses on comprehensively documenting the file structure as a whole to the depth possible by MediaInfoLib's file parsers.
 
+### Additional Resources
+
+Documentation about the MediaTrace format is available at its namespace, https://mediaarea.net/mediatrace/. The XML Schema is available at https://mediaarea.net/mediatrace/mediatrace.xsd. The development history and issue tracker for MediaTrace are available at [GitHub](https://github.com/mediaarea/mediatrace).
+
 ### Entity Semantic Units
 
 #### MediaTrace
