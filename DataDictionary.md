@@ -20,20 +20,7 @@ Developed by [MediaArea](https://mediaarea.ne) in collaboration with the [Museum
 
 The data model of MediaTrace XML is compromised of a few, flexible and generic elements to well support methods of documenting highly diverse sets of digital media. The [MediaTrace Schema](https://mediaarea.net/mediatrace/mediatrace.xsd) includes only three elements: `MediaTrace`, `block`, and `data`. The `MediaTrace` element provides the root level element of the document and contains only `block` elements. The `block` element documents a structural piece or elemental component of a digital file's bitstream. The `block` may then contain either other `block` elements and/or `data` elements. The `data` elements document the lowest-level and most granular aspect of the file's contents. Both `block` and `data` elements share an attribute set which contextualizes the information with byte offsets, additional information, and labelling.
 
-### Entity Semantic Units
-
-#### MediaTrace
-    version
-
-#### block
-    data
-    offset
-    name
-    info
-    info2
-    info3
-    info4
-    size
+### Semantics
 
 Element            | MediaTrace
 -------------------|----------------------------------------------------
