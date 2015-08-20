@@ -2,6 +2,12 @@
 
 ### Introduction
 
+The MediaTrace Data Dictionary offers documentation and definitions for the MediaTrace XML format. MediaTrace XML is a document which itemizes and describes parts of a digital in a way that allows for a highly comprehensive index of a file. MediaTrace XML is supported as an export document by MediaArea utilities, particularly [MediaInfo](https://mediaarea.net/en/MediaInfo) and [MediaConch](https://mediaarea.net/MediaConch).
+
+Most digital container formats are comprised of elemental blocks; MediaTrace XML is intended as a document representation of that elemental structure to show the hierarchical relationship, size, labelling, and contents of each block. For digital container elements which contain binary data (such as the audiovisual payloard of a media file) MediaTrace XML will document the size but not contents of the payload; however; for elemnental contents such as text strings, short binary values, numbers, and dates MediaTrace will document those values.
+
+MediaTrace XML is not intended to fully categorize and sumamrize the significant properties of a digital file but focuses on comprehensively documenting the file structure as a whole to the depth possible by MediaInfoLib's file parsers.
+
 ### Entity Semantic Units
 
 #### MediaTrace
