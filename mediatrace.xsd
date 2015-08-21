@@ -11,7 +11,6 @@
         <xsd:sequence>
             <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
-        <xsd:attribute   name="ref" />
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="blockType">
@@ -65,7 +64,22 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
     </xsd:attribute>
-    <xsd:attribute name="moreinfo"   type="xsd:string">
+    <xsd:attribute name="info5"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info6"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info7"   type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="info8"   type="xsd:string">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
