@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://www.mediaarea.net/mediatrace"
     xmlns="http://www.mediaarea.net/mediatrace" elementFormDefault="qualified"
-    version="0.1alpha2">
+    version="0.1">
     <xsd:element name="MediaTrace" type="mediatraceType"/>
     <xsd:complexType name="mediatraceType">
         <xsd:annotation>
