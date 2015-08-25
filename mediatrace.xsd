@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://www.mediaarea.net/mediatrace"
-    xmlns="http://www.mediaarea.net/mediatrace" elementFormDefault="qualified"
+    targetNamespace="https://mediaarea.net/mediatrace"
+    xmlns="https://mediaarea.net/mediatrace" elementFormDefault="qualified"
     version="0.1">
     <xsd:element name="MediaTrace" type="mediatraceType"/>
     <xsd:complexType name="mediatraceType">
