@@ -11,6 +11,7 @@
         <xsd:sequence>
             <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
+        <xsd:attribute   name="ref" />
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="blockType">
@@ -82,6 +83,11 @@
     <xsd:attribute name="info8"   type="xsd:string">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
+    <xsd:attribute name="moreinfo" type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation>This value is deprecated in versions after 0.7.76.</xsd:documentation>
         </xsd:annotation>
     </xsd:attribute>
     <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
