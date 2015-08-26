@@ -17,7 +17,11 @@
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="creationType">
-        <xsd:attributeGroup ref="creationAttributeSet" />
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string" >
+               <xsd:attributeGroup ref="creationAttributeSet"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:complexType name="blockType">
         <xsd:annotation>
@@ -40,7 +44,6 @@
        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:attributeGroup name="creationAttributeSet">
-        <xsd:attribute name="name"           type="xsd:string" use="required"/>
         <xsd:attribute name="version"        type="xsd:string" use="required"/>
         <xsd:attribute name="url"            type="xsd:string"/>
         <xsd:attribute name="build_date"     type="xsd:string"/>
