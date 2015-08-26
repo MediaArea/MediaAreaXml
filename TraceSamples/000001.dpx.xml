@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MediaTrace
     xmlns="https://mediaarea.net/mediatrace"
-    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://mediaarea.net/mediatrace https://mediaarea.net/mediatrace/mediatrace.xsd"
     version="0.1"
     ref="./MediaTrace/TraceSamples/000001.dpx">
