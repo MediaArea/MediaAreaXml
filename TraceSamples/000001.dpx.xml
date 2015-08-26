@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MediaTrace
     xmlns="https://mediaarea.net/mediatrace"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.mediaarea.net/mediatrace http://www.mediaarea.net/mediatrace/mediatrace.xsd"
-    version="0.7.76"
-    ref="/Users/drice/github/local/MediaTrace/TraceSamples/000001.dpx">
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://mediaarea.net/mediatrace https://mediaarea.net/mediatrace/mediatrace.xsd"
+    version="0.1"
+    ref="./MediaTrace/TraceSamples/000001.dpx">
     <creatingApplication version="0.7.76" url="https://mediaarea.net/en/MediaInfo">MediaInfo</creatingApplication>
     <creatingLibrary version="0.7.76">MediaInfoLib</creatingLibrary>
 <block offset="0" name="Generic section header" size="1664">
