@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Work in progress, not for production -->
-<MediaTrace version="0.7.74">
+<MediaTrace
+    xmlns="http://www.mediaarea.net/mediatrace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mediaarea.net/mediatrace http://www.mediaarea.net/mediatrace/mediatrace.xsd"
+    version="0.7.76"
+    ref="/Users/drice/github/local/MediaTrace/TraceSamples/000001.dpx">
 <block offset="0" name="Generic section header" size="1664">
-    <block offset="0" name="File information" size="768">  //"File Information Header"
+    <block offset="0" name="File information" size="768">
         <data offset="0" name="Magic number">XPDS</data>
         <data offset="4" name="Offset to image data">2048</data>
         <data offset="8" name="Version number of header format">V2.0</data>
@@ -14,12 +18,12 @@
         <data offset="36" name="FileName">V:\\EP_POS_JONES_DPX12bit\EP_POS_JONES_DPX12bit-1-01\EP_POS_JONES_DPX12bit-1-01_000243.dpx</data>
         <data offset="136" name="Creation Date">2014:09:13:12:42:45LTZ</data>
         <data offset="160" name="Creator">Untitled Project</data>
-        <data offset="260" name="Project">AgiScan 3.4.0</data> //"Project name"
+        <data offset="260" name="Project">AgiScan 3.4.0</data>
         <data offset="460" name="Right to use or copyright statement">2014</data>
         <data offset="660" name="Encryption key">4294967295</data>
         <data offset="664" name="Reserved for future use">(104 bytes)</data>
     </block>
-    <block offset="768" name="Image information" size="640"> "Image information header"
+    <block offset="768" name="Image information" size="640">
         <data offset="768" name="Image orientation" moreinfo="Left to right, Top to bottom">0</data>
         <data offset="770" name="Number of image elements">1</data>
         <data offset="772" name="Pixels per line">1920</data>
@@ -30,10 +34,10 @@
             <data offset="788" name="Reference low quantity represented">0.000</data>
             <data offset="792" name="Reference high data code value">2953707520</data>
             <data offset="796" name="Reference high quantity represented">0.000</data>
-            <data offset="800" name="Descriptor" //"Descriptor for image element " moreinfo="R,G,B">50</data>
+            <data offset="800" name="Descriptor" moreinfo="R,G,B">50</data>
             <data offset="801" name="Transfer characteristic" moreinfo="Linear">2</data>
             <data offset="802" name="Colorimetric specification" moreinfo="">2</data>
-            <data offset="803" name="Bit depth"  //Bit "size" in V.1.0 moreinfo="integer">12</data>
+            <data offset="803" name="Bit depth" moreinfo="integer">12</data>
             <data offset="804" name="Packing" moreinfo="invalid">256</data>
             <data offset="806" name="Encoding" moreinfo="No encoding applied">0</data>
             <data offset="808" name="Offset to data">524288</data>
@@ -44,7 +48,7 @@
         <data offset="852" name="Padding">(504 bytes)</data>
         <data offset="1356" name="Reserved for future use">(52 bytes)</data>
     </block>
-    <block offset="1408" name="Image source information" size="256"> "Image source information header"
+    <block offset="1408" name="Image source information" size="256">
         <data offset="1408" name="X Offset">4294967295</data>
         <data offset="1412" name="Y Offset">4294967295</data>
         <data offset="1416" name="X center">0.000</data>
@@ -61,8 +65,116 @@
             <data offset="1624" name="YT border">65535</data>
             <data offset="1626" name="YB border">65535</data>
         </block>
-        <data offset="1628" name="Pixel ratio : horizontal">4294967295</data> "Pixel aspect ratio"
-        <data offset="1632" name="Pixel ratio : vertical">4294967295</data> "Pixel aspect ratio"
+        <data offset="1628" name="Pixel ratio : horizontal">4294967295</data>
+        <data offset="1632" name="Pixel ratio : vertical">4294967295</data>
+        <block offset="1636" name="Additional source image information" size="28">
+            <data offset="1636" name="X scanned size">0.000</data>
+            <data offset="1640" name="Y scanned size">0.000</data>
+            <data offset="1644" name="Reserved for future use">(20 bytes)</data>
+        </block>
+    </block>
+</block>
+<block offset="1664" name="Industry specific header" size="384">
+    <block offset="1664" name="Motion-picture film information" size="256">
+        <data offset="1664" name="Film mfg. ID code"></data>
+        <data offset="1666" name="Film type"></data>
+        <data offset="1668" name="Offset in perfs"></data>
+        <data offset="1670" name="Prefix"></data>
+        <data offset="1676" name="Count"></data>
+        <data offset="1680" name="Format - e.g. Academy"></data>
+        <data offset="1712" name="Frame position in sequence">4294967295</data>
+        <data offset="1716" name="Sequence length (frames)">4294967295</data>
+        <data offset="1720" name="Held count (1 = default)">4294967295</data>
+        <data offset="1724" name="Frame rate of original (frames/s)">0.000</data>
+        <data offset="1728" name="Shutter angle of camera in degrees">0.000</data>
+        <data offset="1732" name="Frame identification - e.g. keyframe"></data>
+        <data offset="1764" name="Slate information"></data>
+        <data offset="1864" name="Reserved for future use">(56 bytes)</data>
+    </block>
+    <block offset="1920" name="Television information" size="128">
+        <data offset="1920" name="SMPTE time code">4294967295</data>
+        <data offset="1924" name="SMPTE user bits">4294967295</data>
+        <data offset="1928" name="Interlace" moreinfo="2:1 interlace">255</data>
+        <data offset="1929" name="Field number">255</data>
+        <data offset="1930" name="Video signal standard" moreinfo="Undefined">0</data>
+        <data offset="1931" name="Zero">255</data>
+        <data offset="1932" name="Horizontal sampling rate (Hz)">0.000</data>
+        <data offset="1936" name="Vertical sampling rate (Hz)">0.000</data>
+        <data offset="1940" name="Temporal sampling rate or frame rate (Hz)">0.000</data>
+        <data offset="1944" name="Time offset from sync to first pixel (ms)">0.000</data>
+        <data offset="1948" name="Gamma">0.000</data>
+        <data offset="1952" name="Black level code value">0.000</data>
+        <data offset="1956" name="Black gain">0.000</data>
+        <data offset="1960" name="Breakpoint">0.000</data>
+        <data offset="1964" name="Reference white level code value">0.000</data>
+        <data offset="1968" name="Integration time (s)">0.000</data>
+        <data offset="1972" name="Reserved for future use">(76 bytes)</data>
+    </block>
+</block>
+<block offset="2048" name="Image Data" size="12441600">
+    <data offset="2048" name="Data">(12441600 bytes)</data>
+</block><block offset="0" name="Generic section header" size="1664">
+    <block offset="0" name="File information" size="768">
+        <data offset="0" name="Magic number">XPDS</data>
+        <data offset="4" name="Offset to image data">2048</data>
+        <data offset="8" name="Version number of header format">V2.0</data>
+        <data offset="16" name="Total image file size">12443648</data>
+        <data offset="20" name="Ditto Key">16777216</data>
+        <data offset="24" name="Generic section header length">1664</data>
+        <data offset="28" name="Industry specific header length">384</data>
+        <data offset="32" name="User-defined header length">0</data>
+        <data offset="36" name="FileName">V:\\EP_POS_JONES_DPX12bit\EP_POS_JONES_DPX12bit-1-01\EP_POS_JONES_DPX12bit-1-01_000243.dpx</data>
+        <data offset="136" name="Creation Date">2014:09:13:12:42:45LTZ</data>
+        <data offset="160" name="Creator">Untitled Project</data>
+        <data offset="260" name="Project">AgiScan 3.4.0</data>
+        <data offset="460" name="Right to use or copyright statement">2014</data>
+        <data offset="660" name="Encryption key">4294967295</data>
+        <data offset="664" name="Reserved for future use">(104 bytes)</data>
+    </block>
+    <block offset="768" name="Image information" size="640">
+        <data offset="768" name="Image orientation" moreinfo="Left to right, Top to bottom">0</data>
+        <data offset="770" name="Number of image elements">1</data>
+        <data offset="772" name="Pixels per line">1920</data>
+        <data offset="776" name="Lines per image element">1080</data>
+        <block offset="780" name="image element" size="72">
+            <data offset="780" name="Data sign" moreinfo="unsigned">0</data>
+            <data offset="784" name="Reference low data code value">65536</data>
+            <data offset="788" name="Reference low quantity represented">0.000</data>
+            <data offset="792" name="Reference high data code value">2953707520</data>
+            <data offset="796" name="Reference high quantity represented">0.000</data>
+            <data offset="800" name="Descriptor" moreinfo="R,G,B">50</data>
+            <data offset="801" name="Transfer characteristic" moreinfo="Linear">2</data>
+            <data offset="802" name="Colorimetric specification" moreinfo="">2</data>
+            <data offset="803" name="Bit depth" moreinfo="integer">12</data>
+            <data offset="804" name="Packing" moreinfo="invalid">256</data>
+            <data offset="806" name="Encoding" moreinfo="No encoding applied">0</data>
+            <data offset="808" name="Offset to data">524288</data>
+            <data offset="812" name="End-of-line padding">0</data>
+            <data offset="816" name="End-of-image padding">0</data>
+            <data offset="820" name="Description of image element"></data>
+        </block>
+        <data offset="852" name="Padding">(504 bytes)</data>
+        <data offset="1356" name="Reserved for future use">(52 bytes)</data>
+    </block>
+    <block offset="1408" name="Image source information" size="256">
+        <data offset="1408" name="X Offset">4294967295</data>
+        <data offset="1412" name="Y Offset">4294967295</data>
+        <data offset="1416" name="X center">0.000</data>
+        <data offset="1420" name="Y center">0.000</data>
+        <data offset="1424" name="X original size">4294967295</data>
+        <data offset="1428" name="Y original size">4294967295</data>
+        <data offset="1432" name="Source image filename"></data>
+        <data offset="1532" name="Source image date/time"></data>
+        <data offset="1556" name="Input device name"></data>
+        <data offset="1588" name="Input device serial number"></data>
+        <block offset="1620" name="Border validity" size="8">
+            <data offset="1620" name="XL border">65535</data>
+            <data offset="1622" name="XR border">65535</data>
+            <data offset="1624" name="YT border">65535</data>
+            <data offset="1626" name="YB border">65535</data>
+        </block>
+        <data offset="1628" name="Pixel ratio : horizontal">4294967295</data>
+        <data offset="1632" name="Pixel ratio : vertical">4294967295</data>
         <block offset="1636" name="Additional source image information" size="28">
             <data offset="1636" name="X scanned size">0.000</data>
             <data offset="1640" name="Y scanned size">0.000</data>
