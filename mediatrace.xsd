@@ -11,7 +11,10 @@
         <xsd:sequence>
             <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
             <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
-            <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:choice maxOccurs="unbounded">
+                <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
+            </xsd:choice>
         </xsd:sequence>
         <xsd:attribute   name="ref" />
         <xsd:attribute   name="version" />
