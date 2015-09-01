@@ -54,70 +54,70 @@
         <xsd:attribute name="compiler_ident" type="xsd:string"/>
     </xsd:attributeGroup>
     <xsd:attributeGroup name="itemAttributeSet">
-    <xsd:attribute name="offset"  type="xsd:nonNegativeInteger">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="name"    type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info"    type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info2"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info3"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info4"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info5"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info6"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info7"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info8"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="moreinfo" type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation>This value is deprecated in versions after 0.7.76.</xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="dt" type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation>The attribute describes the type of data expression of the element, such as dt="binary.base64".</xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
+        <xsd:attribute name="offset"  type="xsd:nonNegativeInteger">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="name"    type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info"    type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info2"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info3"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info4"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info5"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info6"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info7"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info8"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="moreinfo" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>This value is deprecated in versions after 0.7.76.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="dt" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>The attribute describes the type of data expression of the element, such as dt="binary.base64".</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
     </xsd:attributeGroup>
 </xsd:schema>
