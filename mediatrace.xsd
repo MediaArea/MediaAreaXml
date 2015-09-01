@@ -114,5 +114,10 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
     </xsd:attribute>
+    <xsd:attribute name="dt" type="xsd:string">
+        <xsd:annotation>
+            <xsd:documentation>The attribute describes the type of data expression of the element, such as dt="binary.base64".</xsd:documentation>
+        </xsd:annotation>
+    </xsd:attribute>
     </xsd:attributeGroup>
 </xsd:schema>
