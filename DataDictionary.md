@@ -31,12 +31,68 @@ Examples           | See MediaTrace's [GitHub](https://github.com/mediaarea/medi
 Repeatbility       | Not repeatable
 Obligation         | Required
 
+Attribute          | ref
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | Not repeatable
+Obligation         | Optional
+
 Attribute          | version
 -------------------|----------------------------------------------------
 Definition         | The `version` declares the release number of MediaInfoLib.
 Examples           | `0.7.74`
 Repeatbility       | Not repeatable
 Obligation         | Optional
+
+Element            | creatingApplication
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Element            | creatingLibrary
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Attribute          | version
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Attribute          | url
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Attribute          | build_date
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Attribute          | build_time
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
+
+Attribute          | compiler_ident
+-------------------|----------------------------------------------------
+Definition         | 
+Examples           | 
+Repeatbility       | 
+Obligation         | 
 
 Element            | block
 -------------------|----------------------------------------------------
@@ -102,7 +158,28 @@ Repeatbility       | Repeatable
 Obligation         | Optional
 
 
-Attribute          | moreinfo
+Attribute          | info5
+-------------------|----------------------------------------------------
+Definition         | Same as `info` but provides additional contextual information
+Examples           |
+Repeatbility       | Repeatable
+Obligation         | Optional
+
+Attribute          | info6
+-------------------|----------------------------------------------------
+Definition         | Same as `info` but provides additional contextual information
+Examples           |
+Repeatbility       | Repeatable
+Obligation         | Optional
+
+Attribute          | info7
+-------------------|----------------------------------------------------
+Definition         | Same as `info` but provides additional contextual information
+Examples           |
+Repeatbility       | Repeatable
+Obligation         | Optional
+
+Attribute          | info8
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
