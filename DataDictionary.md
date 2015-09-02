@@ -33,8 +33,8 @@ Obligation         | Required
 
 Attribute          | ref
 -------------------|----------------------------------------------------
-Definition         | The 'ref' attribute identifies the path of the file from the root directory.
-Examples           | '/Users/mediaconch/ffv1_0.mkv'
+Definition         | The `ref` attribute identifies the path of the file from the root directory.
+Examples           | `/Users/mediaconch/ffv1_0.mkv`
 Repeatability      | Not repeatable
 Obligation         | Optional
 
@@ -47,51 +47,51 @@ Obligation         | Optional
 
 Element            | creatingApplication
 -------------------|----------------------------------------------------
-Definition         | The 'creatingApplication' element identifies the application used to produce the MediaTrace document. 
-Examples           | 'MediaInfo'
+Definition         | The `creatingApplication` element identifies the application used to produce the MediaTrace document. 
+Examples           | `MediaInfo`
 Repeatability      | Not repeatable
 Obligation         | Optional
 
 Element            | creatingLibrary
 -------------------|----------------------------------------------------
-Definition         | The 'creatingLibrary' element identifies the library used with the associated application. 
-Examples           | 'MediaInfoLib'
+Definition         | The `creatingLibrary` element identifies the library used with the associated application. 
+Examples           | `MediaInfoLib`
 Repeatbility       | Not repeatable
 Obligation         | Optional
 
 Attribute          | version
 -------------------|----------------------------------------------------
-Definition         | The 'version' attribute specifies the version of the creating application. 
-Examples           | '0.7.76'
+Definition         | The `version` attribute specifies the version of the creating application. 
+Examples           | `0.7.76`
 Repeatbility       | Not repeatable
 Obligation         | Required
 
 Attribute          | url
 -------------------|----------------------------------------------------
-Definition         | The 'url' attribute provides the uniform resource locator, i.e. web address for the creating application or library.
-Examples           | 'https://mediaarea.net/MediaInfo'
+Definition         | The `url` attribute provides the uniform resource locator, i.e. web address for the creating application or library.
+Examples           | `https://mediaarea.net/MediaInfo`
 Repeatbility       | Not repeatable
 Obligation         | Optional
 
 Attribute          | build_date
 -------------------|----------------------------------------------------
-Definition         | The 'build_date' attribute specifies the date in which the creating application binary was built, as a string in YYYY-MM-DD format. 
-Examples           | '2014-09-13'
+Definition         | The `build_date` attribute specifies the date in which the creating application binary was built, as a string in YYYY-MM-DD format. 
+Examples           | `2014-09-13`
 Repeatbility       | Not repeatable
 Obligation         | Optional 
 
 Attribute          | build_time
 -------------------|----------------------------------------------------
-Definition         | The 'build_time' attribute specifies the date in which the creating application binary was built, as a string in HH:MM:SSTZ format. 
-Examples           | '12:42:45LTZ'
+Definition         | The `build_time` attribute specifies the date in which the creating application binary was built, as a string in HH:MM:SSTZ format. 
+Examples           | `12:42:45LTZ`
 Repeatbility       | Not repeatable
 Obligation         | Optional
  
 
 Attribute          | compiler_ident
 -------------------|----------------------------------------------------
-Definition         | The 'compiler_ident' attribute identifies the compiler used with the creating application. 
-Examples           | 'Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)'
+Definition         | The `compiler_ident` attribute identifies the compiler used with the creating application. 
+Examples           | `Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)`
 Repeatbility       | Not repeatable
 Obligation         | Optional
 
@@ -111,7 +111,7 @@ Usage Notes        | Many audiovisual formats are based on chunk-based storage i
 
 Element            | data
 -------------------|----------------------------------------------------
-Definition         | The `data` elements document the lowest-level and most granular aspect of the file's contents.
+Definition         | The `data` elements document the lowest-level and  most granular aspect of the file's contents.
 Examples           | `<data offset='552' name='Data'>Lavf56.40.101</data>`
 Repeatability      | Repeatable
 Obligation         | Optional
