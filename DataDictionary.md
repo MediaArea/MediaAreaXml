@@ -208,6 +208,6 @@ Attribute          | size
 -------------------|----------------------------------------------------
 Definition         | The `size` is an integer that expresses the amount of data being described by the `data` or `block` element measured in octets.
 Is Attribute Of    | data, block
-Examples           | `11`
+Examples           | `<block offset="410" name="CodecID" info="V_MS/VFW/FOURCC" size="17">`
 Repeatability      | Not repeatable
 Obligation         | Optional
