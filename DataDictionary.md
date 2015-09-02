@@ -143,7 +143,7 @@ Attribute          | info
 -------------------|----------------------------------------------------
 Definition         | The `info` attribute stores values that have been gathered or interpretted from the `block` or `data` by MediaInfo's file parsers.
 Is Attribute Of    | data, block
-Examples           |
+Examples           | `<block offset="39" name="DocTypeVersion" info="4" size="4">`
 Repeatability      | Not repeatable
 Obligation         | Optional
 
@@ -151,7 +151,7 @@ Attribute          | info2
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information.
 Is Attribute Of    | data, block
-Examples           |
+Examples           |  `<block offset="119" name="SeekPosition" info="108807" info2="1A942" size="6">`
 Repeatability      | Not repeatable
 Obligation         | Optional
 
