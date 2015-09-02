@@ -79,7 +79,7 @@ Obligation         | Optional
 
 Attribute          | build_date
 -------------------|----------------------------------------------------
-Definition         | The `build_date` attribute specifies the date in which the creating application binary was built, as a string in YYYY-MM-DD format. 
+Definition         | The `build_date` attribute specifies the date in which the creating application binary was built, as a string in ISO 8601 YYYY-MM-DD format. 
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `2014-09-13`
 Repeatbility       | Not repeatable
@@ -87,9 +87,9 @@ Obligation         | Optional
 
 Attribute          | build_time
 -------------------|----------------------------------------------------
-Definition         | The `build_time` attribute specifies the date in which the creating application binary was built, as a string in HH:MM:SSTZ format. 
+Definition         | The `build_time` attribute specifies the date in which the creating application binary was built, as a string in ISO 8601 HH:MM:SSZ format. 
 Is Attribute Of    | creatingApplication, creatingLibrary
-Examples           | `12:42:45LTZ`
+Examples           | `T12:42:45+0200`
 Repeatbility       | Not repeatable
 Obligation         | Optional
  
