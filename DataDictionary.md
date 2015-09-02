@@ -28,70 +28,70 @@ Element            | MediaTrace
 -------------------|----------------------------------------------------
 Definition         | `MediaTrace` is the root-element of the XML document and contains a structural report of a digital file comprised of logically arranged `block` and `data` elements.
 Examples           | See MediaTrace's [GitHub](https://github.com/mediaarea/mediatrace) repository for example MediaTrace XML documents.
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Required
 
 Attribute          | ref
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
 
 Attribute          | version
 -------------------|----------------------------------------------------
 Definition         | The `version` declares the release number of MediaInfoLib.
 Examples           | `0.7.74`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
 
 Element            | creatingApplication
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      |
 Obligation         | 
 
 Element            | creatingLibrary
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      |
 Obligation         | 
 
 Attribute          | version
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      |
 Obligation         | 
 
 Attribute          | url
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      | 
 Obligation         | 
 
 Attribute          | build_date
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      | 
 Obligation         | 
 
 Attribute          | build_time
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      |
 Obligation         | 
 
 Attribute          | compiler_ident
 -------------------|----------------------------------------------------
 Definition         | 
 Examples           | 
-Repeatbility       | 
+Repeatability      |
 Obligation         | 
 
 Element            | block
@@ -104,7 +104,7 @@ Examples           | `<block offset="719" name="Flags" size="1">`
                    | `    <data offset="720" name="Lacing">0</data>`
                    | `    <data offset="719" name="Discardable">0</data>`
                    | `</block>`
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 Usage Notes        | Many audiovisual formats are based on chunk-based storage in which a block of data will contain either a data payload or other blocks. In QuickTime parlance, these blocks are called "atoms"; in AVI "chunks", and in Matroska, "elements". MediaTrace will attempt to parse apart each block into subdivisions and report on their contents. Whether the source format specification calls it element, atom, chunk, or another term, MediaTrace will call it a block.
 
@@ -112,49 +112,49 @@ Element            | data
 -------------------|----------------------------------------------------
 Definition         | The `data` elements document the lowest-level and most granular aspect of the file's contents.
 Examples           | `<data offset="552" name="Data">Lavf56.40.101</data>`
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | offset
 -------------------|----------------------------------------------------
 Definition         | The `offset` is an integer that expresses the location of the `data` or `block` within a digital file relative to the start of the file, measured in octets.
 Examples           | `0`, `1000`, `298346234`
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | name
 -------------------|----------------------------------------------------
 Definition         | The `name` attribute stores a label associated with the `block` or `data`. The `name` may provide a human-readable label as gathered from the file format's associated specification or the `name` may provide an unprocessed identifier as used internally within the file's structure.
 Examples           | `TimecodeScale`
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info
 -------------------|----------------------------------------------------
 Definition         | The `info` attribute stores values that have been gathered or interpretted from the `block` or `data` by MediaInfo's file parsers.
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info2
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information.
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info3
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info4
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 
@@ -162,33 +162,33 @@ Attribute          | info5
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info6
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info7
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | info8
 -------------------|----------------------------------------------------
 Definition         | Same as `info` but provides additional contextual information
 Examples           |
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
 
 Attribute          | size
 -------------------|----------------------------------------------------
 Definition         | The `size` is an integer that expresses the amount of data being described by the `data` or `block` element measured in octets.
 Examples           | `11`
-Repeatbility       | Repeatable
+Repeatability      | Repeatable
 Obligation         | Optional
