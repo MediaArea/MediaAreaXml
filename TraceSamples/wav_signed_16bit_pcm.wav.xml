@@ -4,8 +4,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://mediaarea.net/mediatrace https://mediaarea.net/mediatrace/mediatrace_0_1.xsd"
     version="0.1"
-    ref="/Users/erikpiil/MediaConch_SampleFiles/Legacy/LPCM/wav_signed_16bit_pcm.wav">
-    <creatingLibrary version="0.7.76" url="https://mediaarea.net/MediaInfo">MediaInfoLib</creatingLibrary>
+    ref="/Users/erikpiil/MediaTrace/TraceSamples/wav_signed_16bit_pcm.wav">
+    <creatingLibrary version="0.7.77" url="https://mediaarea.net/MediaInfo">MediaInfoLib</creatingLibrary>
     <block offset="0" name="Wave" size="3358036">
         <block offset="0" name="Header" size="12">
             <data offset="0" name="Name">RIFF</data>
@@ -31,18 +31,22 @@
                 <data offset="40" name="Size">3356814</data>
             </block>
         </block>
+        <block offset="44" name="...Continued" info="Unknown" info2="1" size="131028">
             <block offset="44" name="Block" size="131028">
                 <data offset="44" name="Data">(131028 bytes)</data>
             </block>
         </block>
+        <block offset="131072" name="...Continued" info="Unknown" info2="2" size="65536">
             <block offset="131072" name="Block" size="65536">
                 <data offset="131072" name="Data">(65536 bytes)</data>
             </block>
         </block>
+        <block offset="196608" name="...Continued" info="Unknown" info2="3" size="65536">
             <block offset="196608" name="Block" size="65536">
                 <data offset="196608" name="Data">(65536 bytes)</data>
             </block>
         </block>
+        <block offset="262144" name="...Continued" info="Unknown" info2="4" size="65536">
             <block offset="262144" name="Block" size="65536">
                 <data offset="262144" name="Data">(65536 bytes)</data>
             </block>
