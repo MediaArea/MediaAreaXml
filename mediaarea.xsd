@@ -5,6 +5,7 @@
     xmlns:mi="https://mediaarea.net/mediainfo"
     xmlns:mt="https://mediaarea.net/mediatrace"
     version="0.1">
+    <xsd:import namespace="https://mediaarea.net/mediaconch" schemaLocation="mediaconch.xsd"/>
     <xsd:import namespace="https://mediaarea.net/mediainfo"  schemaLocation="mediainfo.xsd"/>
     <xsd:import namespace="https://mediaarea.net/mediatrace" schemaLocation="mediatrace.xsd"/>
     <xsd:element name="MediaArea" type="mediaareaType"/>
