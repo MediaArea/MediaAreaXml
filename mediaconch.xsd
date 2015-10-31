@@ -29,11 +29,11 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="policy"      type="policyType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
     </xsd:complexType>
-    <xsd:complexType name="policyType">
+    <xsd:complexType name="checkType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
