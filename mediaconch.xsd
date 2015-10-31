@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="https://mediaarea.net/mediaconch"
     xmlns="https://mediaarea.net/mediaconch" elementFormDefault="qualified"
-    version="1.0alpha1">
+    version="0.1">
     <xsd:element name="MediaConch" type="mediaconchType"/>
     <xsd:complexType name="mediaconchType">
         <xsd:annotation>
