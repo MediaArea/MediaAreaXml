@@ -55,7 +55,7 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:attribute   name="tracktype" />
-        <xsd:attribute   name="trackorder" />
+        <xsd:attribute   name="tracktypeorder" />
         <xsd:attribute   name="trackid" />
         <xsd:attribute   name="actual" />
         <xsd:attribute   name="outcome" />
