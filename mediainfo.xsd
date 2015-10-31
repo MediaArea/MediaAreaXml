@@ -1023,8 +1023,7 @@
             <xsd:element name="extra" type="extraType"  minOccurs="0" maxOccurs="1" />
         </xsd:sequence>
         <xsd:attribute   name="type" use="required" />
-        <xsd:attribute   name="streamid" />
-        <xsd:attribute   name="id" />
+        <xsd:attribute   name="tracktypeorder" default="1"/>
     </xsd:complexType>
     <xsd:complexType name="extraType">
         <xsd:annotation>
