@@ -42,7 +42,9 @@
             <xsd:element name="context"     type="contextType" minOccurs="0" maxOccurs="1" />
             <xsd:element name="test"        type="testType"    minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
+        <xsd:attribute   name="icid" />
         <xsd:attribute   name="name" />
+        <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="contextType">
         <xsd:annotation>
@@ -55,11 +57,25 @@
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="value"       type="valueType"  minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
         <xsd:attribute   name="tracktype" />
         <xsd:attribute   name="typeorder" />
         <xsd:attribute   name="trackid" />
         <xsd:attribute   name="actual" />
         <xsd:attribute   name="outcome" />
         <xsd:attribute   name="reason" />
+    </xsd:complexType>
+    <xsd:complexType name="valueType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+           <xsd:extension base="xsd:string" >
+               <xsd:attribute   name="name" />
+               <xsd:attribute   name="offset" />
+           </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 </xsd:schema>
