@@ -1018,7 +1018,7 @@
                 <xsd:documentation>Documents the type of encoded media with the track, ie: General, Video, Audio, Text, Image, etc.</xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
-        <xsd:attribute   name="tracktypeorder" default="1">
+        <xsd:attribute   name="typeorder" default="1">
             <xsd:annotation>
                 <xsd:documentation>If there is more than one track of the same type (i.e. four audio tracks) this attribute will number them according to storage order within the bitstream.</xsd:documentation>
             </xsd:annotation>
