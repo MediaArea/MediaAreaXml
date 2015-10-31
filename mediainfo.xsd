@@ -1024,6 +1024,7 @@
         </xsd:sequence>
         <xsd:attribute   name="type" use="required" />
         <xsd:attribute   name="streamid" />
+        <xsd:attribute   name="id" />
     </xsd:complexType>
     <xsd:complexType name="extraType">
         <xsd:annotation>
