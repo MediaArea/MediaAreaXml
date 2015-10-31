@@ -9,11 +9,12 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="policyChecks" type="policyChecksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="version" />
     </xsd:complexType>
-    <xsd:complexType name="policyChecksType">
+    <xsd:complexType name="checksType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
