@@ -5,9 +5,6 @@
     version="2.0alpha1">
     <xsd:element name="MediaInfo" type="mediainfoType"/>
     <xsd:complexType name="mediainfoType">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
         <xsd:choice>
             <xsd:element name="File"    type="fileType"  minOccurs="0" maxOccurs="unbounded" />
             <xsd:element name="track"   type="trackType" minOccurs="0" maxOccurs="unbounded" />
@@ -15,18 +12,12 @@
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="fileType">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="track"   type="trackType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
     </xsd:complexType>
     <xsd:complexType name="trackType">
-        <xsd:annotation>
-            <xsd:documentation>This attribute describes</xsd:documentation>
-        </xsd:annotation>
         <xsd:sequence>
             <xsd:choice maxOccurs="unbounded">
                 <xsd:element name="ActiveFormatDescription" minOccurs="0" maxOccurs="1" type="xsd:string">
@@ -1026,9 +1017,6 @@
         <xsd:attribute   name="tracktypeorder" default="1"/>
     </xsd:complexType>
     <xsd:complexType name="extraType">
-        <xsd:annotation>
-            <xsd:documentation>This element describes</xsd:documentation>
-        </xsd:annotation>
         <xsd:sequence>
              <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
