@@ -2,17 +2,23 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="https://mediaarea.net/mediainfo"
     xmlns="https://mediaarea.net/mediainfo" elementFormDefault="qualified"
-    version="2.0alpha2">
+    version="2.0beta1">
     <xsd:element name="MediaInfo" type="mediainfoType"/>
     <xsd:complexType name="mediainfoType">
         <xsd:choice>
             <xsd:element name="media"    type="mediaType"  minOccurs="0" maxOccurs="unbounded" />
-            <xsd:element name="track"   type="trackType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:sequence>
+                <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
+                <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
+                <xsd:element name="track"   type="trackType" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
         </xsd:choice>
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="mediaType">
         <xsd:sequence>
+            <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
             <xsd:element name="track"   type="trackType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
@@ -1028,6 +1034,13 @@
         <xsd:sequence>
              <xsd:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="creationType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string" >
+               <xsd:attributeGroup ref="creationAttributeSet"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:attributeGroup name="creationAttributeSet">
         <xsd:attribute name="version"        type="xsd:string" use="required"/>
