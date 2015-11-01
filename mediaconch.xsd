@@ -8,10 +8,15 @@
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
-        <xsd:sequence>
-            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-            <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-        </xsd:sequence>
+        <xsd:choice>
+            <xsd:sequence>
+                <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:sequence>
+                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:choice>
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="checksType">
@@ -19,9 +24,9 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="name"       type="xsd:string"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="name"        type="xsd:string"  minOccurs="0" maxOccurs="1" />
             <xsd:element name="description" type="xsd:string"  minOccurs="0" maxOccurs="1" />
-            <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="version" />
     </xsd:complexType>
@@ -30,7 +35,8 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
     </xsd:complexType>
