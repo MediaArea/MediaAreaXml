@@ -19,7 +19,11 @@
                 </xsd:choice>
             </xsd:choice>
         </xsd:sequence>
-        <xsd:attribute   name="ref" />
+        <xsd:attribute   name="ref" >
+            <xsd:annotation>
+                <xsd:documentation>The attribute is deprecated. It is recommended to use MediaTrace/media/@ref.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="creationType">
