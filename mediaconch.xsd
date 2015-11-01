@@ -13,8 +13,8 @@
                 <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
             </xsd:sequence>
             <xsd:sequence>
-                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
                 <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:choice>
         <xsd:attribute   name="version" />
@@ -35,8 +35,8 @@
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
             <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
     </xsd:complexType>
