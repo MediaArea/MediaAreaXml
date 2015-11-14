@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://mediaarea.net/mediaconch"
+    xmlns="https://mediaarea.net/mediaconch" elementFormDefault="qualified"
+    version="0.1">
+    <xsd:element name="MediaConch" type="mediaconchType"/>
+    <xsd:complexType name="mediaconchType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:choice>
+            <xsd:sequence>
+                <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+            <xsd:sequence>
+                <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:choice>
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="checksType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="name"        type="xsd:string"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="description" type="xsd:string"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="mediaType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="ref" />
+    </xsd:complexType>
+    <xsd:complexType name="checkType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="context"     type="contextType" minOccurs="0" maxOccurs="1" />
+            <xsd:element name="test"        type="testType"    minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="icid" />
+        <xsd:attribute   name="name" />
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="contextType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute   name="field" />
+        <xsd:attribute   name="value" />
+    </xsd:complexType>
+    <xsd:complexType name="testType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="value"       type="valueType"  minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="tracktype" />
+        <xsd:attribute   name="tracktypeorder" />
+        <xsd:attribute   name="trackid" />
+        <xsd:attribute   name="actual" />
+        <xsd:attribute   name="outcome" />
+        <xsd:attribute   name="reason" />
+    </xsd:complexType>
+    <xsd:complexType name="valueType">
+        <xsd:annotation>
+            <xsd:documentation></xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+           <xsd:extension base="xsd:string" >
+               <xsd:attribute   name="name" />
+               <xsd:attribute   name="offset" />
+           </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>

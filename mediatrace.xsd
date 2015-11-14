@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://www.mediaarea.net/mediatrace"
-    xmlns="http://www.mediaarea.net/mediatrace" elementFormDefault="qualified"
-    version="0.1alpha2">
+    targetNamespace="https://mediaarea.net/mediatrace"
+    xmlns="https://mediaarea.net/mediatrace" elementFormDefault="qualified"
+    version="0.1">
     <xsd:element name="MediaTrace" type="mediatraceType"/>
     <xsd:complexType name="mediatraceType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
-            <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:choice>
+                <xsd:element name="media"  type="mediaType"     minOccurs="0" maxOccurs="unbounded" />
+                <xsd:choice maxOccurs="unbounded">
+                    <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
+                </xsd:choice>
+            </xsd:choice>
         </xsd:sequence>
+        <xsd:attribute   name="ref" >
+            <xsd:annotation>
+                <xsd:documentation>The attribute is deprecated. It is recommended to use MediaTrace/media/@ref.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
         <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="creationType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string" >
+               <xsd:attributeGroup ref="creationAttributeSet"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="mediaType">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
+        </xsd:choice>
+        <xsd:attribute   name="ref" />
     </xsd:complexType>
     <xsd:complexType name="blockType">
         <xsd:annotation>
@@ -33,41 +60,78 @@
           </xsd:extension>
        </xsd:simpleContent>
     </xsd:complexType>
+    <xsd:attributeGroup name="creationAttributeSet">
+        <xsd:attribute name="version"        type="xsd:string" use="required"/>
+        <xsd:attribute name="url"            type="xsd:string"/>
+        <xsd:attribute name="build_date"     type="xsd:string"/>
+        <xsd:attribute name="build_time"     type="xsd:string"/>
+        <xsd:attribute name="compiler_ident" type="xsd:string"/>
+    </xsd:attributeGroup>
     <xsd:attributeGroup name="itemAttributeSet">
-    <xsd:attribute name="offset"  type="xsd:nonNegativeInteger">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="name"    type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info"    type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info2"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info3"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="info4"   type="xsd:string">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
-    <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
-        <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
-        </xsd:annotation>
-    </xsd:attribute>
+        <xsd:attribute name="offset"  type="xsd:nonNegativeInteger">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="name"    type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info"    type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info2"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info3"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info4"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info5"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info6"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info7"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="info8"   type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="moreinfo" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>This value is deprecated in versions after 0.7.76.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="size"    type="xsd:nonNegativeInteger">
+            <xsd:annotation>
+                <xsd:documentation></xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
+        <xsd:attribute name="dt" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>The attribute describes the type of data expression of the element, such as dt="binary.base64".</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
     </xsd:attributeGroup>
 </xsd:schema>

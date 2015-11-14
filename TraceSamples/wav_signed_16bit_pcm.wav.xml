@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MediaTrace
+    xmlns="https://mediaarea.net/mediatrace"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://mediaarea.net/mediatrace https://mediaarea.net/mediatrace/mediatrace_0_1.xsd"
+    version="0.1"
+    ref="/Users/erikpiil/MediaTrace/TraceSamples/wav_signed_16bit_pcm.wav">
+    <creatingLibrary version="0.7.77" url="https://mediaarea.net/MediaInfo">MediaInfoLib</creatingLibrary>
+    <block offset="0" name="Wave" size="3358036">
+        <block offset="0" name="Header" size="12">
+            <data offset="0" name="Name">RIFF</data>
+            <data offset="4" name="Size">3358028</data>
+            <data offset="8" name="Real Name">WAVE</data>
+        </block>
+
+        <block offset="12" name="Stream format" info="Audio" size="24">
+            <block offset="12" name="Header" size="8">
+                <data offset="12" name="Name">fmt </data>
+                <data offset="16" name="Size">16</data>
+            </block>
+            <data offset="20" name="FormatTag">1</data>
+            <data offset="22" name="Channels">1</data>
+            <data offset="24" name="SamplesPerSec">96000</data>
+            <data offset="28" name="AvgBytesPerSec">192000</data>
+            <data offset="32" name="BlockAlign">2</data>
+            <data offset="34" name="BitsPerSample">16</data>
+        </block>
+        <block offset="36" name="Raw datas" size="8">
+            <block offset="36" name="Header" size="8">
+                <data offset="36" name="Name">data</data>
+                <data offset="40" name="Size">3356814</data>
+            </block>
+        </block>
+        <block offset="44" name="...Continued" info="Unknown" info2="1" size="131028">
+            <block offset="44" name="Block" size="131028">
+                <data offset="44" name="Data">(131028 bytes)</data>
+            </block>
+        </block>
+        <block offset="131072" name="...Continued" info="Unknown" info2="2" size="65536">
+            <block offset="131072" name="Block" size="65536">
+                <data offset="131072" name="Data">(65536 bytes)</data>
+            </block>
+        </block>
+        <block offset="196608" name="...Continued" info="Unknown" info2="3" size="65536">
+            <block offset="196608" name="Block" size="65536">
+                <data offset="196608" name="Data">(65536 bytes)</data>
+            </block>
+        </block>
+        <block offset="262144" name="...Continued" info="Unknown" info2="4" size="65536">
+            <block offset="262144" name="Block" size="65536">
+                <data offset="262144" name="Data">(65536 bytes)</data>
+            </block>
+        </block>
+        <block offset="3356858" name="Broadcast extension" size="866">
+            <block offset="3356858" name="Header" size="8">
+                <data offset="3356858" name="Name">bext</data>
+                <data offset="3356862" name="Size">858</data>
+            </block>
+            <data offset="3356866" name="Description">16-bit PCM sample test for PerFormaMediaInfo</data>
+            <data offset="3357122" name="Originator">US, MediaArea</data>
+            <data offset="3357154" name="OriginatorReference">US, MediaArea</data>
+            <data offset="3357186" name="OriginationDate">2014-12-17</data>
+            <data offset="3357196" name="OriginationTime">22:37:32</data>
+            <data offset="3357204" name="TimeReference">1632000</data>
+            <data offset="3357212" name="Version">2</data>
+            <data offset="3357214" name="Reserved">(254 bytes)</data>
+            <data offset="3357468" name="History"></data>
+        </block>
+        <block offset="3357724" name="Tags" size="312">
+            <block offset="3357724" name="Header" size="12">
+                <data offset="3357724" name="Name">LIST</data>
+                <data offset="3357728" name="Size">304</data>
+                <data offset="3357732" name="Real Name">INFO</data>
+            </block>
+            <block offset="3357736" name="Archival_Location" info="US" size="10">
+                <block offset="3357736" name="Header" size="8">
+                    <data offset="3357736" name="Name">IARL</data>
+                    <data offset="3357740" name="Size">2</data>
+                </block>
+                <data offset="3357744" name="Value">US</data>
+            </block>
+            <block offset="3357746" name="Director" info="John Reilly" size="20">
+                <block offset="3357746" name="Header" size="8">
+                    <data offset="3357746" name="Name">IART</data>
+                    <data offset="3357750" name="Size">11</data>
+                </block>
+                <data offset="3357754" name="Value">John Reilly</data>
+                <data offset="3357765" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357766" name="CommissionedBy" info="MediaArea" size="18">
+                <block offset="3357766" name="Header" size="8">
+                    <data offset="3357766" name="Name">ICMS</data>
+                    <data offset="3357770" name="Size">9</data>
+                </block>
+                <data offset="3357774" name="Value">MediaArea</data>
+                <data offset="3357783" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357784" name="Comment" info="test" size="12">
+                <block offset="3357784" name="Header" size="8">
+                    <data offset="3357784" name="Name">ICMT</data>
+                    <data offset="3357788" name="Size">4</data>
+                </block>
+                <data offset="3357792" name="Value">test</data>
+            </block>
+            <block offset="3357796" name="Copyright" info="Public Domain" size="22">
+                <block offset="3357796" name="Header" size="8">
+                    <data offset="3357796" name="Name">ICOP</data>
+                    <data offset="3357800" name="Size">13</data>
+                </block>
+                <data offset="3357804" name="Value">Public Domain</data>
+                <data offset="3357817" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357818" name="Recorded_Date" info="2014-12-17" size="18">
+                <block offset="3357818" name="Header" size="8">
+                    <data offset="3357818" name="Name">ICRD</data>
+                    <data offset="3357822" name="Size">10</data>
+                </block>
+                <data offset="3357826" name="Value">2014-12-17</data>
+            </block>
+            <block offset="3357836" name="EncodedBy" info="Erik Piil" size="18">
+                <block offset="3357836" name="Header" size="8">
+                    <data offset="3357836" name="Name">IENG</data>
+                    <data offset="3357840" name="Size">9</data>
+                </block>
+                <data offset="3357844" name="Value">Erik Piil</data>
+                <data offset="3357853" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357854" name="Genre" info="Spoken Word" size="20">
+                <block offset="3357854" name="Header" size="8">
+                    <data offset="3357854" name="Name">IGNR</data>
+                    <data offset="3357858" name="Size">11</data>
+                </block>
+                <data offset="3357862" name="Value">Spoken Word</data>
+                <data offset="3357873" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357874" name="Keywords" info="New American Cinema" size="28">
+                <block offset="3357874" name="Header" size="8">
+                    <data offset="3357874" name="Name">IKEY</data>
+                    <data offset="3357878" name="Size">19</data>
+                </block>
+                <data offset="3357882" name="Value">New American Cinema</data>
+                <data offset="3357901" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357902" name="OriginalSourceMedium" info="Open Reel" size="18">
+                <block offset="3357902" name="Header" size="8">
+                    <data offset="3357902" name="Name">IMED</data>
+                    <data offset="3357906" name="Size">9</data>
+                </block>
+                <data offset="3357910" name="Value">Open Reel</data>
+                <data offset="3357919" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357920" name="Title" info="NBC Intercurriculum" size="28">
+                <block offset="3357920" name="Header" size="8">
+                    <data offset="3357920" name="Name">INAM</data>
+                    <data offset="3357924" name="Size">19</data>
+                </block>
+                <data offset="3357928" name="Value">NBC Intercurriculum</data>
+                <data offset="3357947" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357948" name="OriginalSourceForm/Name" info="MBC Radio" size="18">
+                <block offset="3357948" name="Header" size="8">
+                    <data offset="3357948" name="Name">IPRD</data>
+                    <data offset="3357952" name="Size">9</data>
+                </block>
+                <data offset="3357956" name="Value">MBC Radio</data>
+                <data offset="3357965" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3357966" name="Encoded_Application" info="Audacity" size="16">
+                <block offset="3357966" name="Header" size="8">
+                    <data offset="3357966" name="Name">ISFT</data>
+                    <data offset="3357970" name="Size">8</data>
+                </block>
+                <data offset="3357974" name="Value">Audacity</data>
+            </block>
+            <block offset="3357982" name="OriginalSourceForm/DistributedBy" info="Erik Piil" size="18">
+                <block offset="3357982" name="Header" size="8">
+                    <data offset="3357982" name="Name">ISRC</data>
+                    <data offset="3357986" name="Size">9</data>
+                </block>
+                <data offset="3357990" name="Value">Erik Piil</data>
+                <data offset="3357999" name="Alignement">(1 bytes)</data>
+            </block>
+            <block offset="3358000" name="OriginalSourceForm" info="Open Reel " size="18">
+                <block offset="3358000" name="Header" size="8">
+                    <data offset="3358000" name="Name">ISRF</data>
+                    <data offset="3358004" name="Size">10</data>
+                </block>
+                <data offset="3358008" name="Value">Open Reel </data>
+            </block>
+            <block offset="3358018" name="EncodedBy" info="Erik Piil" size="18">
+                <block offset="3358018" name="Header" size="8">
+                    <data offset="3358018" name="Name">ITCH</data>
+                    <data offset="3358022" name="Size">9</data>
+                </block>
+                <data offset="3358026" name="Value">Erik Piil</data>
+                <data offset="3358035" name="Alignement">(1 bytes)</data>
+            </block>
+        </block>
+    </block>
+</MediaTrace>

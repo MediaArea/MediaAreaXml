@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://mediaarea.net/mediaarea"
+    xmlns="https://mediaarea.net/mediaarea" elementFormDefault="qualified"
+    xmlns:mi="https://mediaarea.net/mediainfo"
+    xmlns:mt="https://mediaarea.net/mediatrace"
+    version="0.1">
+    <xsd:import namespace="https://mediaarea.net/mediaconch" schemaLocation="mediaconch.xsd"/>
+    <xsd:import namespace="https://mediaarea.net/mediainfo"  schemaLocation="mediainfo.xsd"/>
+    <xsd:import namespace="https://mediaarea.net/mediatrace" schemaLocation="mediatrace.xsd"/>
+    <xsd:element name="MediaArea" type="mediaareaType"/>
+    <xsd:complexType name="mediaareaType">
+        <xsd:annotation>
+            <xsd:documentation>This element describes</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+            <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="media"               type="mediaType"     minOccurs="0" maxOccurs="unbounded" />
+        </xsd:sequence>
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="creationType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string" >
+               <xsd:attributeGroup ref="creationAttributeSet"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="mediaType">
+        <xsd:sequence>
+            <xsd:element ref="mi:MediaInfo"  minOccurs="0" maxOccurs="1" />
+            <xsd:element ref="mt:MediaTrace" minOccurs="0" maxOccurs="1" />
+            <xsd:element ref="mt:MediaConch" minOccurs="0" maxOccurs="1" />
+        </xsd:sequence>
+        <xsd:attribute   name="ref" />
+    </xsd:complexType>
+    <xsd:attributeGroup name="creationAttributeSet">
+        <xsd:attribute name="version"        type="xsd:string" use="required"/>
+        <xsd:attribute name="url"            type="xsd:string"/>
+        <xsd:attribute name="build_date"     type="xsd:string"/>
+        <xsd:attribute name="build_time"     type="xsd:string"/>
+        <xsd:attribute name="compiler_ident" type="xsd:string"/>
+    </xsd:attributeGroup>
+</xsd:schema>
