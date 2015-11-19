@@ -6,7 +6,7 @@
     <xsd:element name="MediaConch" type="mediaconchType"/>
     <xsd:complexType name="mediaconchType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The MediaConch element is the root-element of the MediaConch XML document.</xsd:documentation>
         </xsd:annotation>
         <xsd:choice>
             <xsd:sequence>
@@ -21,7 +21,7 @@
     </xsd:complexType>
     <xsd:complexType name="checksType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The version attribute identifies the version of the implementation check.</xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="name"        type="xsd:string"  minOccurs="0" maxOccurs="1" />
@@ -32,7 +32,7 @@
     </xsd:complexType>
     <xsd:complexType name="mediaType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The version attribute identifies the version of the implementation check.</xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
@@ -42,7 +42,7 @@
     </xsd:complexType>
     <xsd:complexType name="checkType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The ref attribute identifies the path of the file from the root directory.</xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="context"     type="contextType" minOccurs="0" maxOccurs="1" />
@@ -54,14 +54,14 @@
     </xsd:complexType>
     <xsd:complexType name="contextType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The version attribute identifies the version of the implementation check. </xsd:documentation>
         </xsd:annotation>
         <xsd:attribute   name="field" />
         <xsd:attribute   name="value" />
     </xsd:complexType>
     <xsd:complexType name="testType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation> The field attribute identifies the selected metadata field for policy checking. </xsd:documentation>
         </xsd:annotation>
         <xsd:sequence>
             <xsd:element name="value"       type="valueType"  minOccurs="0" maxOccurs="unbounded" />
@@ -75,7 +75,7 @@
     </xsd:complexType>
     <xsd:complexType name="valueType">
         <xsd:annotation>
-            <xsd:documentation></xsd:documentation>
+            <xsd:documentation>The reason attribute specifies a reason for a "failed" outcome check. </xsd:documentation>
         </xsd:annotation>
         <xsd:simpleContent>
            <xsd:extension base="xsd:string" >
