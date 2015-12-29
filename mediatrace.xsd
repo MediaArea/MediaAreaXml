@@ -25,6 +25,7 @@
             </xsd:annotation>
         </xsd:attribute>
         <xsd:attribute   name="version" />
+        <xsd:attribute   name="parser"  />
     </xsd:complexType>
     <xsd:complexType name="creationType">
         <xsd:simpleContent>
@@ -39,6 +40,7 @@
             <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
         </xsd:choice>
         <xsd:attribute   name="ref" />
+        <xsd:attribute   name="parser" />
     </xsd:complexType>
     <xsd:complexType name="blockType">
         <xsd:annotation>
@@ -49,6 +51,7 @@
             <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
         </xsd:choice>
         <xsd:attributeGroup ref="itemAttributeSet" />
+        <xsd:attribute      name="parser" />
     </xsd:complexType>
     <xsd:complexType name="dataType">
        <xsd:annotation>
