@@ -799,6 +799,7 @@
                         <xsd:documentation>This element describes</xsd:documentation>
                     </xsd:annotation>
                 </xsd:element>
+                <xsd:element name="SamplesPerFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="SamplingRate" minOccurs="0" maxOccurs="1" type="xsd:string">
                     <xsd:annotation>
                         <xsd:documentation>This element describes</xsd:documentation>
