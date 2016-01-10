@@ -85,6 +85,7 @@
                 <xsd:element name="Duration_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_LastFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_Start" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="ElementCount" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Encoded_Application" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Encoded_Application_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Encoded_Application_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
