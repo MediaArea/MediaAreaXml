@@ -41,6 +41,7 @@
                 </xsd:element>
                 <xsd:element name="Alignment" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="BitDepth" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="BitDepth_Detected" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="BitDepth_Stored" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="BitRate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="BitRate_Encoded" minOccurs="0" maxOccurs="1" type="xsd:string"/>
