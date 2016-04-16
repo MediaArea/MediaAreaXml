@@ -24,6 +24,11 @@
                 <xsd:documentation>The attribute is deprecated. It is recommended to use MediaTrace/media/@ref.</xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
+        <xsd:attribute   name="mtsl" >
+            <xsd:annotation>
+                <xsd:documentation>This attribute is designed to store xsi:schemaLocation while mediatrace is in micromediatrace form.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
         <xsd:attribute   name="version" />
         <xsd:attribute   name="parser"  />
     </xsd:complexType>
