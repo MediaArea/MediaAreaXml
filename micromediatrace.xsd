@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://mediaarea.net/mediatrace"
-    xmlns="https://mediaarea.net/mediatrace" elementFormDefault="qualified"
+    targetNamespace="https://mediaarea.net/micromediatrace"
+    xmlns="https://mediaarea.net/micromediatrace" elementFormDefault="qualified"
     version="0.2">
-    <xsd:element name="MediaTrace" type="mediatraceType"/>
+    <xsd:element name="MicroMediaTrace" type="mediatraceType"/>
     <xsd:complexType name="mediatraceType">
         <xsd:annotation>
             <xsd:documentation></xsd:documentation>
