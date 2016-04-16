@@ -45,7 +45,7 @@
             <xsd:element name="d"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
         </xsd:choice>
         <xsd:attribute   name="ref" />
-        <xsd:attribute   name="p" />
+        <xsd:attribute   name="parser" />
     </xsd:complexType>
     <xsd:complexType name="blockType">
         <xsd:annotation>
