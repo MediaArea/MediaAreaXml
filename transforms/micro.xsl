@@ -33,7 +33,7 @@
       <xsl:apply-templates select="@*|node()"/>
     </xsl:element>
   </xsl:template>
-  <xsl:template match="@xsi:schemaLocation">
+  <xsl:template match="mt:MediaTrace/@xsi:schemaLocation">
      <xsl:attribute name="mtsl">
         <xsl:value-of select="."/>
      </xsl:attribute>
