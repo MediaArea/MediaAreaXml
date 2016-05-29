@@ -83,7 +83,7 @@
         <xsd:simpleContent>
            <xsd:extension base="xsd:string" >
                <xsd:attribute   name="name" />
-               <xsd:attribute   name="id" />
+               <xsd:attribute   name="formatid" />
                <xsd:attribute   name="offset" />
                <xsd:attribute   name="context" />
            </xsd:extension>
