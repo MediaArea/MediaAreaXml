@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     targetNamespace="https://mediaarea.net/mediaconch"
     xmlns="https://mediaarea.net/mediaconch" elementFormDefault="qualified"
-    version="0.1">
+    version="0.2">
     <xsd:element name="MediaConch" type="mediaconchType"/>
     <xsd:complexType name="mediaconchType">
         <xsd:annotation>
@@ -56,8 +56,11 @@
         <xsd:annotation>
             <xsd:documentation>The version attribute identifies the version of the implementation check. </xsd:documentation>
         </xsd:annotation>
-        <xsd:attribute   name="field" />
-        <xsd:attribute   name="value" />
+        <xsd:simpleContent>
+           <xsd:extension base="xsd:string" >
+               <xsd:attribute   name="name" />
+           </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:complexType name="testType">
         <xsd:annotation>
@@ -80,7 +83,9 @@
         <xsd:simpleContent>
            <xsd:extension base="xsd:string" >
                <xsd:attribute   name="name" />
+               <xsd:attribute   name="id" />
                <xsd:attribute   name="offset" />
+               <xsd:attribute   name="context" />
            </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
