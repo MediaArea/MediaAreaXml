@@ -1,5 +1,5 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mmt="https://mediaarea.net/micromediatrace" xmlns="https://mediaarea.net/mediatrace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
-  <xsl:output encoding="UTF-8" method="xml" version="1.0" indent="no" disable-output-escaping="yes"/>
+  <xsl:output encoding="UTF-8" method="xml" version="1.0" indent="yes" disable-output-escaping="yes"/>
   <xsl:template match="/">
     <xsl:apply-templates select="@*|node()"/>
   </xsl:template>
