@@ -12,4 +12,4 @@ The xsl, micro.xsl and unmicro.xsl, may be used to transform MediaTrace into Mic
 
 ### Transform MicroMediaTrace to MediaTrace
 
-`xsltproc micro.xsl tiny_micromediatrace.xml > huge_mediatrace.xml`
+`xsltproc unmicro.xsl tiny_micromediatrace.xml > huge_mediatrace.xml`
