@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://mediaarea.net/mediapolicy"
+    xmlns="https://mediaarea.net/mediapolicy" elementFormDefault="qualified"
+    version="0.1">
+    <xsd:element name="policy" type="policyType"/>
+    <xsd:complexType name="policyType">
+        <xsd:annotation>
+            <xsd:documentation>The root element of the document and also container of other policy elements and/or rule elements.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="description" type="xsd:string"  minOccurs="0" maxOccurs="1" />
+          <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="policy"    type="policyType" />
+            <xsd:element name="rule"      type="ruleType" />
+          </xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute   name="name" />
+        <xsd:attribute   name="type" />
+        <xsd:attribute   name="version" />
+    </xsd:complexType>
+    <xsd:complexType name="ruleType">
+        <xsd:annotation>
+            <xsd:documentation>Contains a single test of policy</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+              <xsd:attribute   name="name" />
+              <xsd:attribute   name="occurrence" />
+              <xsd:attribute   name="operator" />
+              <xsd:attribute   name="scope" />
+              <xsd:attribute   name="tracktype" />
+              <xsd:attribute   name="value" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+</xsd:schema>
