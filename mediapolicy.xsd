@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="https://mediaarea.net/mediapolicy"
-    xmlns="https://mediaarea.net/mediapolicy" elementFormDefault="qualified"
+    elementFormDefault="qualified"
     version="0.1">
     <xsd:element name="policy" type="policyType"/>
     <xsd:complexType name="policyType">
