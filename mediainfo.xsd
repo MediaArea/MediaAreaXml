@@ -192,6 +192,7 @@
                 <xsd:element name="OverallBitRate_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OverallBitRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="PixelAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="PixelAspectRatio_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ReplayGain_Gain" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ReplayGain_Peak" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Rotation" minOccurs="0" maxOccurs="1" type="xsd:string"/>
