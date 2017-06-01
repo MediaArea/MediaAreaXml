@@ -117,6 +117,7 @@
                 <xsd:element name="Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Commercial_IfAny" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Compression" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Format_Level" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_BVOP" minOccurs="0" maxOccurs="1" type="xsd:string"/>
