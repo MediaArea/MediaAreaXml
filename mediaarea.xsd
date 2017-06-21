@@ -4,11 +4,13 @@
     xmlns="https://mediaarea.net/mediaarea" elementFormDefault="qualified"
     xmlns:mi="https://mediaarea.net/mediainfo"
     xmlns:mt="https://mediaarea.net/mediatrace"
+    xmlns:mmt="https://mediaarea.net/micromediatrace"
     xmlns:mc="https://mediaarea.net/mediaconch"
     version="0.1">
     <xsd:import namespace="https://mediaarea.net/mediaconch" schemaLocation="mediaconch.xsd"/>
     <xsd:import namespace="https://mediaarea.net/mediainfo"  schemaLocation="mediainfo.xsd"/>
     <xsd:import namespace="https://mediaarea.net/mediatrace" schemaLocation="mediatrace.xsd"/>
+    <xsd:import namespace="https://mediaarea.net/micromediatrace" schemaLocation="micromediatrace.xsd"/>
     <xsd:element name="MediaArea" type="mediaareaType"/>
     <xsd:complexType name="mediaareaType">
         <xsd:annotation>
@@ -31,7 +33,10 @@
     <xsd:complexType name="mediaType">
         <xsd:sequence>
             <xsd:element ref="mi:MediaInfo"  minOccurs="0" maxOccurs="1" />
-            <xsd:element ref="mt:MediaTrace" minOccurs="0" maxOccurs="1" />
+            <xsd:choice minOccurs="0" maxOccurs="1">
+              <xsd:element ref="mt:MediaTrace" />
+              <xsd:element ref="mmt:MicroMediaTrace" />
+            </xsd:choice>
             <xsd:element ref="mc:MediaConch" minOccurs="0" maxOccurs="1" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
