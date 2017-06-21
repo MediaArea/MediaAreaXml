@@ -14,8 +14,8 @@
             <xsd:choice>
                 <xsd:element name="media"  type="mediaType"     minOccurs="0" maxOccurs="unbounded" />
                 <xsd:choice maxOccurs="unbounded">
-                    <xsd:element name="block"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
-                    <xsd:element name="data"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="b"  type="blockType"  minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="d"   type="dataType"   minOccurs="0" maxOccurs="unbounded" />
                 </xsd:choice>
             </xsd:choice>
         </xsd:sequence>
