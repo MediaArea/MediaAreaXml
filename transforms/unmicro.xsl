@@ -93,4 +93,9 @@
         <xsl:value-of select="."/>
      </xsl:attribute>
   </xsl:template>
+  <xsl:template match="@e">
+     <xsl:attribute name="error">
+        <xsl:value-of select="."/>
+     </xsl:attribute>
+  </xsl:template>
 </xsl:stylesheet>

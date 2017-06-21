@@ -141,5 +141,10 @@
                 <xsd:documentation>The attribute describes the type of data expression of the element, such as dt="binary.base64".</xsd:documentation>
             </xsd:annotation>
         </xsd:attribute>
+        <xsd:attribute name="e" type="xsd:string">
+            <xsd:annotation>
+                <xsd:documentation>Specifies the identity of an implementation error associated with the data or block. The value shall be expressed as a implementation check identifer and a version of that implementation check, delimited by a colon.</xsd:documentation>
+            </xsd:annotation>
+        </xsd:attribute>
     </xsd:attributeGroup>
 </xsd:schema>
