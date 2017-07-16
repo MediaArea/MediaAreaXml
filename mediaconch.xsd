@@ -11,15 +11,15 @@
         <xsd:sequence>
             <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
             <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
-        <xsd:choice>
-            <xsd:sequence>
-                <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
-            </xsd:sequence>
-            <xsd:sequence>
-                <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-            </xsd:sequence>
-        </xsd:choice>
+            <xsd:choice>
+                <xsd:sequence>
+                    <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
+                </xsd:sequence>
+                <xsd:sequence>
+                    <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                </xsd:sequence>
+            </xsd:choice>
           </xsd:sequence>
           <xsd:attribute   name="version" />
     </xsd:complexType>
