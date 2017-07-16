@@ -21,6 +21,7 @@
                 </xsd:sequence>
             </xsd:choice>
           </xsd:sequence>
+          <xsd:attribute   name="verbosity" />
           <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="checksType">
