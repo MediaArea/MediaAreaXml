@@ -82,6 +82,7 @@
                 <xsd:element name="Delay_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Delay_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="DisplayAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DisplayAspectRatio_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_End" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
