@@ -144,6 +144,7 @@
                 <xsd:element name="Format_Settings_SBR" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Sign" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Wrapping" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Format_Tier" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="FrameCount" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="FrameRate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
