@@ -189,6 +189,7 @@
                 <xsd:element name="NetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Original_NetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OriginalNetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="OriginalSourceMedium_ID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OtherCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="OverallBitRate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OverallBitRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:string"/>
