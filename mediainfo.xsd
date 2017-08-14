@@ -54,6 +54,7 @@
                 <xsd:element name="ChannelLayout" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChannelPositions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Channels" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Channels_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChromaSubsampling" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ColorSpace" minOccurs="0" maxOccurs="1" type="xsd:string"/>
