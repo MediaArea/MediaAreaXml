@@ -207,6 +207,7 @@
                 <xsd:element name="ScanOrder_Stored" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ScanType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceChannel" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="ServiceKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceProvider" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
