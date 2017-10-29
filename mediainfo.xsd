@@ -54,6 +54,7 @@
                 <xsd:element name="ChannelLayout" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChannelPositions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Channels" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Channels_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChromaSubsampling" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ColorSpace" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -82,6 +83,7 @@
                 <xsd:element name="Delay_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Delay_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="DisplayAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DisplayAspectRatio_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_End" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -143,6 +145,7 @@
                 <xsd:element name="Format_Settings_SBR" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Sign" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Wrapping" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Format_Tier" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="FrameCount" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="FrameRate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -186,6 +189,7 @@
                 <xsd:element name="NetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Original_NetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OriginalNetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="OriginalSourceMedium_ID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OtherCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="OverallBitRate" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="OverallBitRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -207,6 +211,7 @@
                 <xsd:element name="ScanOrder_Stored" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ScanType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceChannel" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="ServiceKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceProvider" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ServiceType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
