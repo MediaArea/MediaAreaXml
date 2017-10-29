@@ -8,16 +8,21 @@
         <xsd:annotation>
             <xsd:documentation>The MediaConch element is the root-element of the MediaConch XML document.</xsd:documentation>
         </xsd:annotation>
-        <xsd:choice>
-            <xsd:sequence>
-                <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
-            </xsd:sequence>
-            <xsd:sequence>
-                <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-                <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
-            </xsd:sequence>
-        </xsd:choice>
-        <xsd:attribute   name="version" />
+        <xsd:sequence>
+            <xsd:element name="creatingApplication" type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:element name="creatingLibrary"     type="creationType"  minOccurs="0" maxOccurs="1" />
+            <xsd:choice>
+                <xsd:sequence>
+                    <xsd:element name="media"       type="mediaType"   minOccurs="0" maxOccurs="unbounded" />
+                </xsd:sequence>
+                <xsd:sequence>
+                    <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                </xsd:sequence>
+            </xsd:choice>
+          </xsd:sequence>
+          <xsd:attribute   name="verbosity" />
+          <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="checksType">
         <xsd:annotation>
@@ -28,6 +33,9 @@
             <xsd:element name="description" type="xsd:string"  minOccurs="0" maxOccurs="1" />
             <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
+        <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="fail_count" />
+        <xsd:attribute   name="checks_run" />
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="mediaType">
@@ -51,6 +59,9 @@
         <xsd:attribute   name="icid" />
         <xsd:attribute   name="name" />
         <xsd:attribute   name="version" />
+        <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="fail_count" />
+        <xsd:attribute   name="tests_run" />
     </xsd:complexType>
     <xsd:complexType name="contextType">
         <xsd:annotation>
@@ -89,4 +100,18 @@
            </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
+    <xsd:complexType name="creationType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string" >
+               <xsd:attributeGroup ref="creationAttributeSet"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:attributeGroup name="creationAttributeSet">
+        <xsd:attribute name="version"        type="xsd:string" use="required"/>
+        <xsd:attribute name="url"            type="xsd:string"/>
+        <xsd:attribute name="build_date"     type="xsd:string"/>
+        <xsd:attribute name="build_time"     type="xsd:string"/>
+        <xsd:attribute name="compiler_ident" type="xsd:string"/>
+    </xsd:attributeGroup>
 </xsd:schema>
