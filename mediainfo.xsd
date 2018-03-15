@@ -201,6 +201,7 @@
                 <xsd:element name="Format_Settings_Matrix_Data" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_ModeExtension" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Format_Settings_Packing" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_PictureStructure" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_PS" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Settings_Pulldown" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -268,6 +269,9 @@
                 <xsd:element name="MultiView_BaseProfile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MultiView_Count" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MultiView_Layout" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Layers" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MusicBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MuxingMode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MuxingMode_MoreInfo" minOccurs="0" maxOccurs="1" type="xsd:string"/>
