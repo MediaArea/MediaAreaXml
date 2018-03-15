@@ -5,7 +5,7 @@
     version="2.0">
 	<xsd:annotation>
 		<xsd:documentation>
-            Version 17.10
+            Version 18.03
             Update from upstream MediaInfo fields info.
             
             Previous versions made by Dave Rice.
