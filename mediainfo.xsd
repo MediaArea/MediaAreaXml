@@ -360,7 +360,7 @@
                 <xsd:element name="Standard" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Stored_Height" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Stored_Width" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-                <xsd:element name="StreamOrder" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+                <xsd:element name="StreamOrder" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="StreamSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="StreamSize_Encoded" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="StreamSize_Proportion" minOccurs="0" maxOccurs="1" type="xsd:string"/>
