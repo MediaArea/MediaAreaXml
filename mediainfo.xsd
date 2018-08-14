@@ -5,6 +5,9 @@
     version="2.0">
 	<xsd:annotation>
 		<xsd:documentation>
+            Version 18.08
+            Format_AdditionalFeatures field.
+            
             Version 18.03
             Update from upstream MediaInfo fields info.
             
@@ -181,6 +184,7 @@
                 <xsd:element name="FooterSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Forced" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="Format_AdditionalFeatures" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Commercial_IfAny" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Compression" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Format_Level" minOccurs="0" maxOccurs="1" type="xsd:string"/>
