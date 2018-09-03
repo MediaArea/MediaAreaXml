@@ -261,7 +261,6 @@
                 <xsd:element name="Lyrics" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Mastered_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MasteredBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-                <xsd:element name="Matrix_Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Matrix_ChannelPositions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Matrix_Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="matrix_coefficients" minOccurs="0" maxOccurs="1" type="xsd:string"/>
