@@ -6,7 +6,7 @@
 	<xsd:annotation>
 		<xsd:documentation>
             Version 18.08
-            Format_AdditionalFeatures field.
+            Format_AdditionalFeatures, CodecID_* fields.
             
             Version 18.03
             Update from upstream MediaInfo fields info.
@@ -88,6 +88,9 @@
                 <xsd:element name="ChromaSubsampling" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChromaSubsampling_Position" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="CodecID_Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="CodecID_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="CodecID_Compatible" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CoDirector" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Collection" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ColorSpace" minOccurs="0" maxOccurs="1" type="xsd:string"/>
