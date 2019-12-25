@@ -8,7 +8,7 @@ Most digital container formats are comprised of elemental blocks; MediaTrace XML
 
 MediaTraceXML will document values of elemental contents such as text strings, short binary values, numbers, and dates. For container elements that contain binary data (such as the audiovisual payload of a media file, for example), MediaTrace will document only the size, and no the contents of the payload itself. 
 
-MediaTrace XML is not intended to fully categorize and sumamrize the significant properties of a digital file, but instead focuses on comprehensively documenting the file structure as a whole, with consideration to the depth possible by MediaInfoLib's file parsers.
+MediaTrace XML is not intended to fully categorize and summarize the significant properties of a digital file, but instead focuses on comprehensively documenting the file structure as a whole, with consideration to the depth possible by MediaInfoLib's file parsers.
 
 ### Additional Resources
 
@@ -58,7 +58,7 @@ Element            | creatingLibrary
 -------------------|----------------------------------------------------
 Definition         | The `creatingLibrary` element identifies the library used with the associated application. 
 Examples           | `MediaInfoLib`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
 
 Attribute          | version
@@ -66,7 +66,7 @@ Attribute          | version
 Definition         | The `version` attribute specifies the version of the creating application or library. 
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `0.7.76`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Required
 
 Attribute          | url
@@ -74,7 +74,7 @@ Attribute          | url
 Definition         | The `url` attribute provides the uniform resource locator, i.e. web address for the creating application or library.
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `https://mediaarea.net/MediaInfo`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
 
 Attribute          | build_date
@@ -82,7 +82,7 @@ Attribute          | build_date
 Definition         | The `build_date` attribute specifies the date in which the creating application binary was built, as a string in ISO 8601 YYYY-MM-DD format. 
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `2014-09-13`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional 
 
 Attribute          | build_time
@@ -90,7 +90,7 @@ Attribute          | build_time
 Definition         | The `build_time` attribute specifies the date in which the creating application binary was built, as a string in ISO 8601 HH:MM:SSZ format. 
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `T12:42:45+0200`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
  
 
@@ -99,7 +99,7 @@ Attribute          | compiler_ident
 Definition         | The `compiler_ident` attribute identifies the compiler used with the creating application or library. 
 Is Attribute Of    | creatingApplication, creatingLibrary
 Examples           | `Apple LLVM version 6.1.0 (clang-602.0.49) (based on LLVM 3.6.0svn)`
-Repeatbility       | Not repeatable
+Repeatability      | Not repeatable
 Obligation         | Optional
 
 Element            | block
@@ -141,7 +141,7 @@ Obligation         | Optional
 
 Attribute          | info
 -------------------|----------------------------------------------------
-Definition         | The `info` attribute stores values that have been gathered or interpretted from the `block` or `data` by MediaInfo's file parsers.
+Definition         | The `info` attribute stores values that have been gathered or interpreted from the `block` or `data` by MediaInfo's file parsers.
 Is Attribute Of    | data, block
 Examples           | `<block offset="39" name="DocTypeVersion" info="4" size="4">`
 Repeatability      | Not repeatable
