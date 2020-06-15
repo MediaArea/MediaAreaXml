@@ -80,7 +80,9 @@
                 <xsd:element name="BufferSize" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CatalogNumber" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChannelLayout" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="ChannelLayout_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChannelPositions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="ChannelPositions_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Channels_Original" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Chapter" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -88,17 +90,19 @@
                 <xsd:element name="ChromaSubsampling" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ChromaSubsampling_Position" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="CodecID_Compatible" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID_Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CodecID_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-                <xsd:element name="CodecID_Compatible" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="CoDirector" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Collection" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="ColorSpace" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_description_present" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_description_present_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="colour_description_present_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_description_present_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_primaries" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_primaries_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="colour_primaries_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_primaries_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_range" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="colour_range_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -146,6 +150,9 @@
                 <xsd:element name="DisplayAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:float"/>
                 <xsd:element name="DisplayAspectRatio_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
                 <xsd:element name="DistributedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Layers" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="DolbyVision_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Domain" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="DotsPerInch" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
@@ -235,6 +242,12 @@
                 <xsd:element name="Gop_OpenClosed" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Gop_OpenClosed_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Grouping" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format_Compatibility" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format_Level" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="HDR_Format_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="HeaderSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Height" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="Height_Offset" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
@@ -264,12 +277,28 @@
                 <xsd:element name="Lyrics" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Mastered_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MasteredBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_ColorPrimaries" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_ColorPrimaries_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_ColorPrimaries_Original_Source;" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_ColorPrimaries_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_Luminance" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_Luminance_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_Luminance_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MasteringDisplay_Luminance_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Matrix_ChannelPositions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Matrix_Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="matrix_coefficients" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="matrix_coefficients_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="matrix_coefficients_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Matrix_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxCLL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxCLL_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxCLL_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxCLL_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxFALL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxFALL_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxFALL_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="MaxFALL_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MenuCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
                 <xsd:element name="MenuID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Mood" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -279,9 +308,6 @@
                 <xsd:element name="MultiView_BaseProfile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MultiView_Count" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MultiView_Layout" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-                <xsd:element name="DolbyVision_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-                <xsd:element name="DolbyVision_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-                <xsd:element name="DolbyVision_Layers" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MusicBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MuxingMode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="MuxingMode_MoreInfo" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -399,6 +425,7 @@
                 <xsd:element name="Track_Sort" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="transfer_characteristics" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="transfer_characteristics_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+                <xsd:element name="transfer_characteristics_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="transfer_characteristics_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="Type" minOccurs="0" maxOccurs="1" type="xsd:string"/>
                 <xsd:element name="UniqueID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
