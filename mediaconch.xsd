@@ -18,6 +18,7 @@
                 <xsd:sequence>
                     <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
                     <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+                    <xsd:element name="policy" type="policyType" minOccurs="0" maxOccurs="unbounded" />
                 </xsd:sequence>
             </xsd:choice>
           </xsd:sequence>
@@ -45,6 +46,7 @@
         <xsd:sequence>
             <xsd:element name="implementationChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
             <xsd:element name="policyChecks" type="checksType" minOccurs="0" maxOccurs="unbounded" />
+            <xsd:element name="policy" type="policyType" minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="ref" />
     </xsd:complexType>
@@ -62,6 +64,42 @@
         <xsd:attribute   name="pass_count" />
         <xsd:attribute   name="fail_count" />
         <xsd:attribute   name="tests_run" />
+    </xsd:complexType>
+    <xsd:complexType name="policyType">
+        <xsd:annotation>
+            <xsd:documentation>Container of other policy elements and/or rule elements.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="description" type="xsd:string"  minOccurs="0" maxOccurs="1" />
+          <xsd:choice minOccurs="0" maxOccurs="unbounded">
+            <xsd:element name="policy"    type="policyType" />
+            <xsd:element name="rule"      type="ruleType" />
+          </xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute   name="name" />
+        <xsd:attribute   name="type" />
+        <xsd:attribute   name="rules_run" />
+        <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="fail_count" />
+        <xsd:attribute   name="outcome" />
+    </xsd:complexType>
+    <xsd:complexType name="ruleType">
+        <xsd:annotation>
+            <xsd:documentation>Contains a single test of policy</xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+              <xsd:attribute   name="name" />
+              <xsd:attribute   name="scope" />
+              <xsd:attribute   name="value" />
+              <xsd:attribute   name="tracktype" />
+              <xsd:attribute   name="occurrence" />
+              <xsd:attribute   name="operator" />
+              <xsd:attribute   name="xpath" />
+              <xsd:attribute   name="actual" />
+              <xsd:attribute   name="outcome" />
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
     <xsd:complexType name="contextType">
         <xsd:annotation>
