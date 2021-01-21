@@ -97,6 +97,7 @@
               <xsd:attribute   name="occurrence" />
               <xsd:attribute   name="operator" />
               <xsd:attribute   name="xpath" />
+              <xsd:attribute   name="requested" />
               <xsd:attribute   name="actual" />
               <xsd:attribute   name="outcome" />
             </xsd:extension>
