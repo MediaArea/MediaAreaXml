@@ -104,6 +104,8 @@
             <xsd:element name="colour_primaries_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="colour_primaries_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="colour_range" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="colour_range_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="colour_range_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="colour_range_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Comic" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Comic_More" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -155,9 +157,13 @@
             <xsd:element name="Domain" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DotsPerInch" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Duration_Base" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Duration_End_Command" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_End" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_LastFrame" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Duration_Start2End" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Duration_Start_Command" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_Start" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="EditedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ElementCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
@@ -185,6 +191,10 @@
             <xsd:element name="Encryption_Padding" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="EPG_Positions_Begin" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="EPG_Positions_End" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Events_PaintOn" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_PopOn" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_RollUp" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_Total" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ExecutiveProducer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="File_Created_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="File_Created_Date_Local" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -192,6 +202,8 @@
             <xsd:element name="File_Modified_Date_Local" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileExtension" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileSize" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="FirstDisplay_Delay_Frames" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="FirstDisplay_Type" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FirstPacketOrder" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="FooterSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Forced" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -236,6 +248,7 @@
             <xsd:element name="FrameRate_Mode_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="FrameRate_Real" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="GeneralCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Genre" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Gop_OpenClosed" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -270,6 +283,8 @@
             <xsd:element name="LawRating_Reason" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="LCCN" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lightness" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Lines_Count" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Lines_MaxCountPerEvent" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="List_StreamKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="List_StreamPos" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lyricist" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -288,6 +303,7 @@
             <xsd:element name="Matrix_Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="matrix_coefficients" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="matrix_coefficients_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="matrix_coefficients_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="matrix_coefficients_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Matrix_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MaxCLL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -409,6 +425,8 @@
             <xsd:element name="TextCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="ThanksTo" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="TimeCode_MaxFrameNumber" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="TimeCode_MaxFrameNumber_Theory" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_Striped" minOccurs="0" maxOccurs="1" type="xsd:string"/>
