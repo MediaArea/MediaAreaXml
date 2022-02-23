@@ -57,14 +57,13 @@
                     <xsd:documentation>This element describes peak loudness levels when measuring a signal on a per-album basis.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
-            <xsd:element name="Accompaniment" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="ActiveFormatDescription" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ActiveFormatDescription_MuxingMode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ActiveFormatDescription_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Album_Performer_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Album_ReplayGain_Gain_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Album_Sort" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Alignment" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Alignment_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="AlternateGroup" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="AlternateGroup_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Archival_Location" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -77,24 +76,24 @@
             <xsd:element name="Audio_Format_WithHint_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Audio_Language_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BarCode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="BitDepth" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="BitDepth_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitDepth_Detected" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="BitDepth_Detected_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="BitDepth" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="BitDepth_Stored" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="BitDepth_Stored_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="BitRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
-            <xsd:element name="BitRate_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="BitDepth_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_Encoded" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Encoded_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Maximum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_Minimum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Minimum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="BitRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_Mode_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Nominal_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="BitRate_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BPM" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BufferSize" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CatalogNumber" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -106,9 +105,9 @@
             <xsd:element name="ChannelPositions_Original_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ChannelPositions_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Channels" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="Channels_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Channels_Original" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Channels_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Channels_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Chapter" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Chapters_Pos_Begin" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Chapters_Pos_End" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
@@ -120,12 +119,12 @@
             <xsd:element name="Codec_Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Extensions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Family" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="CodecID_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Compatible" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Hint" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Info" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="CodecID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="CodecID_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CodecID_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Info" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -173,8 +172,8 @@
             <xsd:element name="CommissionedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Compilation" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Compilation_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="CompleteName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CompleteName_Last" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="CompleteName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer_Nationality" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer_Sort" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -187,22 +186,22 @@
             <xsd:element name="Copyright" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Copyright_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CostumeDesigner" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Count" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Countries" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Country" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Count" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Cover" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Cover_Data" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Cover_Description" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Cover_Mime" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Cover" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Cover_Type" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Cropped" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DataSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Default" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Default_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Delay" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Delay_DropFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Delay_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Delay" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Delay_Original_DropFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Delay_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Delay_Original_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Delay_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Delay_Original_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -225,6 +224,7 @@
             <xsd:element name="Director" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DirectorOfPhotography" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Disabled" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Disabled_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DisplayAspectRatio_CleanAperture" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="DisplayAspectRatio_CleanAperture_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DisplayAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:float"/>
@@ -237,7 +237,6 @@
             <xsd:element name="DolbyVision_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Domain" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="DotsPerInch" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_Base" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Duration_End_Command" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_End_Command_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -267,6 +266,7 @@
             <xsd:element name="Duration_LastFrame_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Duration_LastFrame_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Duration_LastFrame_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_Start2End" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Duration_Start2End_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Duration_Start2End_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -296,27 +296,27 @@
             <xsd:element name="Duration_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="EditedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ElementCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="Encoded_Application" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Application_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Encoded_Application" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Application_Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Application_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Application_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Application_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="EncodedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Encoded_Library" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Encoded_Library" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_OperatingSystem" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="EncodedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Encryption" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_InitializationVector" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_Length" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_Method" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Encryption" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encryption_Padding" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="EPG_Positions_Begin" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
@@ -326,12 +326,12 @@
             <xsd:element name="Events_RollUp" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Events_Total" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ExecutiveProducer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="File_Created_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="File_Created_Date_Local" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="File_Modified_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="File_Modified_Date_Local" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="File_Created_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileExtension_Last" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileExtension" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="File_Modified_Date_Local" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="File_Modified_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileNameExtension_Last" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileNameExtension" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FileName_Last" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -350,7 +350,6 @@
             <xsd:element name="FooterSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Forced" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Forced_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_AdditionalFeatures" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Commercial_IfAny" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Commercial" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -358,8 +357,8 @@
             <xsd:element name="Format_Extensions" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Info" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Level" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Format_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_BVOP" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_BVOP_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_CABAC" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -374,11 +373,12 @@
             <xsd:element name="Format_Settings_GOP" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_ITU" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Law" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Format_Settings_Matrix_Data" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Matrix" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Matrix_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Format_Settings_Matrix_Data" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Format_Settings_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Format_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_ModeExtension" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Format_Settings_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Packing" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_PictureStructure" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_PS" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -397,19 +397,19 @@
             <xsd:element name="Format_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="FrameRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Den" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Maximum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Minimum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Minimum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="FrameRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Mode_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Mode_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Mode_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="FrameRate_Num" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Nominal_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="FrameRate_Num" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original_Den" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original_Num" minOccurs="0" maxOccurs="1" type="xsd:float"/>
@@ -419,15 +419,15 @@
             <xsd:element name="FrameRate_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="GeneralCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Genre" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Gop_OpenClosed" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Gop_OpenClosed_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Gop_OpenClosed_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Gop_OpenClosed_FirstFrame_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Gop_OpenClosed" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Gop_OpenClosed_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Grouping" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="HDR_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_Commercial" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_Compatibility" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_Level" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="HDR_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_Profile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_Settings" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="HDR_Format_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -452,19 +452,19 @@
             <xsd:element name="Inform" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Interlacement" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Interlacement_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Interleaved" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Interleave_Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Interleave_Duration_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Interleave_Preload" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Interleave_Preload_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Interleave_VideoFrames" minOccurs="0" maxOccurs="1" type="xsd:float"/>
-            <xsd:element name="Interleaved" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="InternetMediaType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ISBN" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ISRC" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="IsStreamable" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Keywords" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Label" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="LabelCode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Label" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Language" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Language_More" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Language_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -484,8 +484,8 @@
             <xsd:element name="List_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lyricist" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lyrics" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Mastered_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteredBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Mastered_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_ColorPrimaries" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_ColorPrimaries_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_ColorPrimaries_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -519,8 +519,8 @@
             <xsd:element name="MenuID_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Menu_Language_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Mood" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Movie" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Movie_Country" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Movie" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Movie_More" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Movie_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MultiView_BaseProfile" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -538,28 +538,26 @@
             <xsd:element name="Original_Part" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Original_Performer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Original_Released_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Original_Track" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="OriginalNetworkName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="OriginalSourceForm" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceForm_Cropped" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceForm_DistributedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="OriginalSourceForm" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceForm_Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceForm_NumColors" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceForm_Sharpness" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="OriginalSourceMedium" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceMedium_ID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OriginalSourceMedium_ID_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="OriginalSourceMedium" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Original_Track" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Other_Codec_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OtherCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Other_Format_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Other_Format_WithHint_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Other_Language_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="OverallBitRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="OverallBitRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="OverallBitRate_Maximum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OverallBitRate_Minimum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="OverallBitRate_Minimum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="OverallBitRate" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="OverallBitRate_Mode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OverallBitRate_Mode_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="OverallBitRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
@@ -573,9 +571,9 @@
             <xsd:element name="Performer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Performer_Sort" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Performer_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Period" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="PixelAspectRatio_CleanAperture" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="PixelAspectRatio_CleanAperture_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Period" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="PixelAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="PixelAspectRatio_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="PixelAspectRatio_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -584,8 +582,8 @@
             <xsd:element name="Played_First_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Played_Last_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="PodcastCategory" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Producer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Producer_Copyright" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Producer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ProductionDesigner" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ProductionStudio" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Publisher" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -611,6 +609,7 @@
             <xsd:element name="ScanOrder" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ScanOrder_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ScanOrder_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="ScanOrder_StoredDisplayedInverted" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ScanOrder_Stored" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ScanOrder_Stored_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ScanOrder_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -625,22 +624,15 @@
             <xsd:element name="Season" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Season_Position" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Season_Position_Total" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="Service_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceChannel" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceKind_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceProvider" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="ServiceProviderr_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="ServiceProvider_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ServiceType" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Service_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="SoundEngineer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
-            <xsd:element name="Source_Duration_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration_String3" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Source_Duration_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_Duration_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Source_Duration_FirstFrame_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_Duration_FirstFrame_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -655,16 +647,24 @@
             <xsd:element name="Source_Duration_LastFrame_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_Duration_LastFrame_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_Duration_LastFrame_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Source_Duration_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration_String3" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_Duration_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_FrameCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Source_SamplingCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="Source_StreamSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Source_StreamSize_Encoded" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Source_StreamSize_Encoded_Proportion" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String3" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_Encoded_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Source_StreamSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Source_StreamSize_Proportion" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Source_StreamSize_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -676,12 +676,12 @@
             <xsd:element name="Status" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Stored_Height" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Stored_Width" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="StreamCount" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="StreamCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamKindID" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamKindPos" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamKind_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="StreamOrder" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="StreamOrder" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamSize_Demuxed" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamSize_Demuxed_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Demuxed_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -689,7 +689,6 @@
             <xsd:element name="StreamSize_Demuxed_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Demuxed_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Demuxed_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="StreamSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamSize_Encoded" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamSize_Encoded_Proportion" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Encoded_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -698,6 +697,7 @@
             <xsd:element name="StreamSize_Encoded_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Encoded_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_Encoded_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="StreamSize" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="StreamSize_Proportion" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="StreamSize_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -773,17 +773,17 @@
             <xsd:element name="Video_Format_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Video_Format_WithHint_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Video_Language_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Width" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Width_CleanAperture" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Width_CleanAperture_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Width" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Width_Offset" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Width_Offset_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Width_Original" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Width_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Width_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="WrittenBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Written_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Written_Location" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="WrittenBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="extra" type="extraType"  minOccurs="0" maxOccurs="1" />
         </xsd:all>
         <xsd:attribute   name="type" use="required">
