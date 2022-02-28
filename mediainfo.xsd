@@ -94,6 +94,7 @@
             <xsd:element name="BitRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BitRate_Nominal_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BitRate_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="BitsPixel_Frame" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="BPM" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="BufferSize" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CatalogNumber" minOccurs="0" maxOccurs="1" type="xsd:string"/>
