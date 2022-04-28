@@ -398,7 +398,7 @@
             <xsd:element name="Format_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="FrameRate_Den" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="FrameRate_Den" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="FrameRate_Maximum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Maximum_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Minimum" minOccurs="0" maxOccurs="1" type="xsd:float"/>
@@ -410,7 +410,7 @@
             <xsd:element name="FrameRate_Mode_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="FrameRate_Nominal" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Nominal_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="FrameRate_Num" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="FrameRate_Num" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="FrameRate_Original_Den" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="FrameRate_Original_Num" minOccurs="0" maxOccurs="1" type="xsd:float"/>
