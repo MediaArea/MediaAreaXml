@@ -765,7 +765,7 @@
             <xsd:element name="Video0_Delay_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Video_Codec_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="VideoCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
-            <xsd:element name="Video_Delay" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Video_Delay" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="Video_Delay_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Video_Delay_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Video_Delay_String3" minOccurs="0" maxOccurs="1" type="xsd:string"/>
