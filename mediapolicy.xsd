@@ -17,6 +17,7 @@
         </xsd:sequence>
         <xsd:attribute   name="name" />
         <xsd:attribute   name="type" />
+        <xsd:attribute   name="level" />
         <xsd:attribute   name="version" />
     </xsd:complexType>
     <xsd:complexType name="ruleType">
@@ -30,6 +31,7 @@
               <xsd:attribute   name="operator" />
               <xsd:attribute   name="scope" />
               <xsd:attribute   name="tracktype" />
+              <xsd:attribute   name="level" />
               <xsd:attribute   name="value" />
             </xsd:extension>
         </xsd:simpleContent>
