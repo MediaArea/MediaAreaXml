@@ -79,8 +79,11 @@
         </xsd:sequence>
         <xsd:attribute   name="name" />
         <xsd:attribute   name="type" />
+        <xsd:attribute   name="level" />
         <xsd:attribute   name="rules_run" />
         <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="info_count" />
+        <xsd:attribute   name="warn_count" />
         <xsd:attribute   name="fail_count" />
         <xsd:attribute   name="outcome" />
     </xsd:complexType>
@@ -92,6 +95,7 @@
             <xsd:extension base="xsd:string">
               <xsd:attribute   name="name" />
               <xsd:attribute   name="scope" />
+              <xsd:attribute   name="level" />
               <xsd:attribute   name="value" />
               <xsd:attribute   name="tracktype" />
               <xsd:attribute   name="occurrence" />
