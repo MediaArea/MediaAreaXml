@@ -729,6 +729,8 @@
             <xsd:element name="TimeCode_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_Striped" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeCode_Striped_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="TimeCode_Stripped" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="TimeCode_Stripped_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeStamp_FirstFrame" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="TimeStamp_FirstFrame_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="TimeStamp_FirstFrame_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
