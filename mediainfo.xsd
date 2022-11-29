@@ -323,6 +323,13 @@
             <xsd:element name="Encryption_Padding" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="EPG_Positions_Begin" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="EPG_Positions_End" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Events_MinDuration" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Events_MinDuration_String1" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_MinDuration_String2" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_MinDuration_String3" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_MinDuration_String4" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_MinDuration_String5" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Events_MinDuration_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Events_PaintOn" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Events_PopOn" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Events_RollUp" minOccurs="0" maxOccurs="1" type="xsd:string"/>
