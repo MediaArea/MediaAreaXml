@@ -13,6 +13,7 @@
               ISO/IEC 15938-3 + ISO/IEC 15938-3 COR/1 + ISO/IEC 15938-3 AMD/1 (Visual)
               ISO/IEC 15938-4 + ISO/IEC 15938-4 AMD/1 (Audio)
               ISO/IEC 15938-5 + ISO/IEC 15938-5 COR/1 + ISO/IEC 15938-5 AMD/1 + ISO/IEC 15938-5 AMD/2 (MDS)
+              MediaInfo extensions (draft)
      </documentation>
   </annotation>
   <!-- ########################################################### -->
@@ -5023,7 +5024,15 @@
           <element name="Content" type="mpeg7:ControlledTermUseType"/>
           <element name="Medium" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
           <element name="FileFormat" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
-          <element name="FileSize" type="nonNegativeInteger" minOccurs="0"/>
+          <element name="FileSize" minOccurs="0">
+            <complexType>
+              <simpleContent>
+                <extension base="nonNegativeInteger">
+                  <attribute name="truncated" type="boolean" use="optional" default="false"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
           <element name="System" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
           <element name="Bandwidth" type="float" minOccurs="0"/>
           <element name="BitRate" minOccurs="0">
@@ -5059,7 +5068,7 @@
               </union>
             </simpleType>
           </element>
-          <element name="VisualCoding" minOccurs="0">
+          <element name="VisualCoding" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <sequence>
                 <element name="Format" minOccurs="0">
@@ -5117,7 +5126,7 @@
               </sequence>
             </complexType>
           </element>
-          <element name="AudioCoding" minOccurs="0">
+          <element name="AudioCoding" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <sequence>
                 <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
@@ -5160,6 +5169,13 @@
                   </simpleType>
                 </element>
                 <element name="Presentation" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
+              </sequence>
+            </complexType>
+          </element>
+          <element name="TextualCoding" minOccurs="0" maxOccurs="unbounded">
+            <complexType>
+              <sequence>
+                <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
               </sequence>
             </complexType>
           </element>
@@ -5250,6 +5266,8 @@
               <attribute name="avgQuantScale" type="mpeg7:nonNegativeReal" use="optional"/>
               <attribute name="intraFrameDistance" type="nonNegativeInteger" use="optional"/>
               <attribute name="anchorFrameDistance" type="positiveInteger" use="optional"/>
+              <attribute name="openGOP" type="boolean" use="optional"/>
+              <attribute name="openFirstGOP" type="boolean" use="optional"/>
             </complexType>
           </element>
         </sequence>
