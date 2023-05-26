@@ -5178,6 +5178,22 @@
             <complexType>
               <sequence>
                 <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
+                <element name="Frame" minOccurs="0">
+                  <complexType>
+                    <attribute name="height" type="nonNegativeInteger" use="optional"/>
+                    <attribute name="width" type="nonNegativeInteger" use="optional"/>
+                    <attribute name="aspectRatio" type="mpeg7:nonNegativeReal" use="optional"/>
+                    <attribute name="rate" type="mpeg7:nonNegativeReal" use="optional"/>
+                    <attribute name="structure" use="optional">
+                      <simpleType>
+                        <restriction base="NMTOKEN">
+                          <enumeration value="progressive"/>
+                          <enumeration value="interlaced"/>
+                        </restriction>
+                      </simpleType>
+                    </attribute>
+                  </complexType>
+                </element>
               </sequence>
               <attribute name="id" type="ID" use="optional"/>
             </complexType>
