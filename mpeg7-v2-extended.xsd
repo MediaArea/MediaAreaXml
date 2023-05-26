@@ -5560,7 +5560,7 @@
               <enumeration value="dubbed"/>
               <enumeration value="background"/>
               <enumeration value="hearingImpaired"/>
-              <enumeration value="visualImpaired"/>
+              <enumeration value="visuallyImpaired"/>
             </restriction>
           </simpleType>
         </attribute>
