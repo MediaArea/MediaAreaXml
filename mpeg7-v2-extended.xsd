@@ -5124,6 +5124,7 @@
                 </element>
                 <element name="ColorSampling" type="mpeg7:ColorSamplingType" minOccurs="0"/>
               </sequence>
+              <attribute name="id" type="ID" use="optional"/>
             </complexType>
           </element>
           <element name="AudioCoding" minOccurs="0" maxOccurs="unbounded">
@@ -5170,6 +5171,7 @@
                 </element>
                 <element name="Presentation" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
               </sequence>
+              <attribute name="id" type="ID" use="optional"/>
             </complexType>
           </element>
           <element name="TextualCoding" minOccurs="0" maxOccurs="unbounded">
@@ -5177,6 +5179,7 @@
               <sequence>
                 <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
               </sequence>
+              <attribute name="id" type="ID" use="optional"/>
             </complexType>
           </element>
           <element name="SceneCodingFormat" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
@@ -5502,9 +5505,8 @@
           <element name="CaptionLanguage" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <simpleContent>
-                <extension base="language">
+                <extension base="mpeg7:ExtendedLanguageType">
                   <attribute name="closed" type="boolean" use="optional" default="true"/>
-                  <attribute name="supplemental" type="boolean" use="optional" default="false"/>
                 </extension>
               </simpleContent>
             </complexType>
@@ -5557,9 +5559,12 @@
               <enumeration value="original"/>
               <enumeration value="dubbed"/>
               <enumeration value="background"/>
+              <enumeration value="hearingImpaired"/>
+              <enumeration value="visualImpaired"/>
             </restriction>
           </simpleType>
         </attribute>
+        <attribute name="ref" type="IDREF" use="optional"/>
         <attribute name="supplemental" type="boolean" use="optional" default="false"/>
       </extension>
     </simpleContent>
