@@ -3,8 +3,9 @@
 <!--                     ISO/IEC 15938 Information Technology                         -->
 <!--                    Multimedia Content Description Interface                      -->
 <!--                              MPEG-7 Version 2 Schema                             -->
+<!--                             Extended by MediaArea.net                            -->
 <!-- ################################################################################ -->
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mpeg7="urn:mpeg:mpeg7:schema:2004" targetNamespace="urn:mpeg:mpeg7:schema:2004" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:mpeg7="urn:mpeg:mpeg7-extended:schema:2023" targetNamespace="urn:mpeg:mpeg7-extended:schema:2023" elementFormDefault="qualified" attributeFormDefault="unqualified">
   <annotation>
     <documentation>
       The following schema definition corresponds to the description tools of:
@@ -13,7 +14,7 @@
               ISO/IEC 15938-3 + ISO/IEC 15938-3 COR/1 + ISO/IEC 15938-3 AMD/1 (Visual)
               ISO/IEC 15938-4 + ISO/IEC 15938-4 AMD/1 (Audio)
               ISO/IEC 15938-5 + ISO/IEC 15938-5 COR/1 + ISO/IEC 15938-5 AMD/1 + ISO/IEC 15938-5 AMD/2 (MDS)
-              MediaInfo extensions (draft)
+              MediaInfo extensions
      </documentation>
   </annotation>
   <!-- ########################################################### -->
@@ -5210,6 +5211,7 @@
     <complexContent>
       <extension base="mpeg7:DType">
         <sequence>
+          <element name="Name" type="string"/>
           <element name="Lattice" minOccurs="0">
             <complexType>
               <attribute name="width" type="positiveInteger" use="required"/>
