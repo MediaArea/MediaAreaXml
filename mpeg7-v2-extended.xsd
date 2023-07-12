@@ -5124,6 +5124,7 @@
                   </complexType>
                 </element>
                 <element name="ColorSampling" type="mpeg7:ColorSamplingType" minOccurs="0"/>
+                <element name="Encryption" type="string" minOccurs="0"/>
               </sequence>
               <attribute name="id" type="ID" use="optional"/>
             </complexType>
@@ -5171,6 +5172,8 @@
                   </simpleType>
                 </element>
                 <element name="Presentation" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
+                <element name="ChannelLayout" type="string" minOccurs="0"/>
+                <element name="Encryption" type="string" minOccurs="0"/>
               </sequence>
               <attribute name="id" type="ID" use="optional"/>
             </complexType>
@@ -5195,6 +5198,8 @@
                     </attribute>
                   </complexType>
                 </element>
+                <element name="TotalNumOfSamples" type="integer" minOccurs="0"/>
+                <element name="Encryption" type="string" minOccurs="0"/>
               </sequence>
               <attribute name="id" type="ID" use="optional"/>
             </complexType>
