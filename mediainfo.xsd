@@ -72,6 +72,7 @@
             <xsd:element name="AssistantDirector" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Audio_Codec_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="AudioCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Audio_Channels_Total" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Audio_Format_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Audio_Format_WithHint_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Audio_Language_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -600,6 +601,9 @@
             <xsd:element name="Rating" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Recorded_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Recorded_Location" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Reel" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Reel_Position" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Reel_Position_Total" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Released_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="RemixedBy" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ReplayGain_Gain" minOccurs="0" maxOccurs="1" type="xsd:string"/>
