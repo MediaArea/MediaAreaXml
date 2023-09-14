@@ -3673,6 +3673,7 @@
   <!-- Definition of MediaTime datatype -->
   <complexType name="MediaTimeType">
     <sequence>
+      <element name="MediaLocator" type="mpeg7:MediaLocatorType" minOccurs="0" maxOccurs="unbounded"/>
       <choice>
         <element name="MediaTimePoint" type="mpeg7:mediaTimePointType"/>
         <element name="MediaRelTimePoint" type="mpeg7:MediaRelTimePointType"/>
@@ -3761,6 +3762,7 @@
         <element name="InlineMedia" type="mpeg7:InlineMediaType"/>
       </choice>
       <element name="StreamID" type="nonNegativeInteger" minOccurs="0"/>
+      <element name="SubstreamID" type="nonNegativeInteger" minOccurs="0"/>
     </sequence>
   </complexType>
   <!-- ############################################ -->
@@ -5072,6 +5074,7 @@
           <element name="VisualCoding" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <sequence>
+                <element name="MediaLocator" type="mpeg7:MediaLocatorType" minOccurs="0" maxOccurs="1"/>
                 <element name="Format" minOccurs="0">
                   <complexType>
                     <complexContent>
@@ -5132,6 +5135,7 @@
           <element name="AudioCoding" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <sequence>
+                <element name="MediaLocator" type="mpeg7:MediaLocatorType" minOccurs="0" maxOccurs="1"/>
                 <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
                 <element name="AudioChannels" minOccurs="0">
                   <complexType>
@@ -5181,6 +5185,7 @@
           <element name="TextualCoding" minOccurs="0" maxOccurs="unbounded">
             <complexType>
               <sequence>
+                <element name="MediaLocator" type="mpeg7:MediaLocatorType" minOccurs="0" maxOccurs="1"/>
                 <element name="Format" type="mpeg7:ControlledTermUseType" minOccurs="0"/>
                 <element name="Frame" minOccurs="0">
                   <complexType>
