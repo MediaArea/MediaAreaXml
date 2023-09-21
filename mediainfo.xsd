@@ -765,6 +765,7 @@
             <xsd:element name="transfer_characteristics_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="transfer_characteristics_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Type" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="UMID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="UniqueID" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="UniqueID_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="UniversalAdID_Registry" minOccurs="0" maxOccurs="1" type="xsd:string"/>
