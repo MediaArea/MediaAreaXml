@@ -57,6 +57,9 @@
                     <xsd:documentation>This element describes peak loudness levels when measuring a signal on a per-album basis.</xsd:documentation>
                 </xsd:annotation>
             </xsd:element>
+            <xsd:element name="Active_DisplayAspectRatio" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="Active_Height" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Active_Width" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="ActiveFormatDescription_MuxingMode" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="ActiveFormatDescription_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Album_Performer_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
