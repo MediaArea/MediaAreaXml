@@ -153,6 +153,7 @@
             <xsd:element name="Codec_Settings_QPel" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Settings_RefFrames" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Settings_Sign" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Codec_Settings_SliceCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Codec_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Codec_Url" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CoDirector" minOccurs="0" maxOccurs="1" type="xsd:string"/>
