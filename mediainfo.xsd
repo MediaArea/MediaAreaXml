@@ -405,6 +405,7 @@
             <xsd:element name="Format_Settings_SBR_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Sign" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_SliceCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Format_Settings_SliceCount_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Settings_Wrapping" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Format_Tier" minOccurs="0" maxOccurs="1" type="xsd:string"/>
