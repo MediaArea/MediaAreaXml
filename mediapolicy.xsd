@@ -20,20 +20,28 @@
         <xsd:attribute   name="level" />
         <xsd:attribute   name="version" />
     </xsd:complexType>
-    <xsd:complexType name="ruleType">
+    <xsd:complexType name="ruleType" mixed="true">
         <xsd:annotation>
             <xsd:documentation>Contains a single test of policy</xsd:documentation>
         </xsd:annotation>
-        <xsd:simpleContent>
-            <xsd:extension base="xsd:string">
-              <xsd:attribute   name="name" />
-              <xsd:attribute   name="occurrence" />
-              <xsd:attribute   name="operator" />
-              <xsd:attribute   name="scope" />
-              <xsd:attribute   name="tracktype" />
-              <xsd:attribute   name="level" />
-              <xsd:attribute   name="value" />
-            </xsd:extension>
-        </xsd:simpleContent>
+        <xsd:sequence>
+            <xsd:element name="source" type="sourceType" minOccurs="0" maxOccurs="1" />
+        </xsd:sequence>
+        <xsd:attribute name="name" />
+        <xsd:attribute name="occurrence" />
+        <xsd:attribute name="operator" />
+        <xsd:attribute name="scope" />
+        <xsd:attribute name="tracktype" />
+        <xsd:attribute name="level" />
+        <xsd:attribute name="value" />
+    </xsd:complexType>
+    <xsd:complexType name="sourceType">
+        <xsd:annotation>
+            <xsd:documentation>Specifies a field as the source for comparison</xsd:documentation>
+        </xsd:annotation>
+        <xsd:attribute   name="occurrence" />
+        <xsd:attribute   name="scope" />
+        <xsd:attribute   name="tracktype" />
+        <xsd:attribute   name="value" />
     </xsd:complexType>
 </xsd:schema>
