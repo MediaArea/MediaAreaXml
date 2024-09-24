@@ -492,7 +492,8 @@
             <xsd:element name="LCCN" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lightness" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Lines_Count" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="Lines_MaxCountPerEvent" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Lines_MaxCharacterCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
+            <xsd:element name="Lines_MaxCountPerEvent" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="List_StreamKind" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="List_StreamPos" minOccurs="0" maxOccurs="1" type="xsd:string"/>
