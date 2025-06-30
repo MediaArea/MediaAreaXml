@@ -5124,6 +5124,7 @@
                         </restriction>
                       </simpleType>
                     </attribute>
+                    <attribute name="variableRate" type="boolean" use="optional"/>
                   </complexType>
                 </element>
                 <element name="ColorSampling" type="mpeg7:ColorSamplingType" minOccurs="0"/>
