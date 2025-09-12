@@ -314,6 +314,7 @@
             <xsd:element name="Encoded_Hardware_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Hardware_Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Hardware_Model" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Encoded_Hardware_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Hardware_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Date" minOccurs="0" maxOccurs="1" type="xsd:string"/>
@@ -323,6 +324,7 @@
             <xsd:element name="Encoded_Library_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_Library_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_OperatingSystem" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="Encoded_OperatingSystem_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_OperatingSystem_CompanyName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_OperatingSystem_Name" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Encoded_OperatingSystem_Version" minOccurs="0" maxOccurs="1" type="xsd:string"/>
