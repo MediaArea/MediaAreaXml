@@ -517,6 +517,8 @@
             <xsd:element name="MasteringDisplay_ColorPrimaries_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_ColorPrimaries_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_Luminance" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MasteringDisplay_Luminance_Max" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="MasteringDisplay_Luminance_Min" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="MasteringDisplay_Luminance_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_Luminance_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MasteringDisplay_Luminance_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
