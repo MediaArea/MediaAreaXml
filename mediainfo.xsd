@@ -531,14 +531,18 @@
             <xsd:element name="matrix_coefficients_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="matrix_coefficients_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Matrix_Format" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="MaxCLL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="MaxCLL_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxCLL" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="MaxCLL_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="MaxCLL_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxCLL_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MaxCLL_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="MaxFALL" minOccurs="0" maxOccurs="1" type="xsd:string"/>
-            <xsd:element name="MaxFALL_Original" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxCLL_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxFALL" minOccurs="0" maxOccurs="1" type="xsd:float"/>
+            <xsd:element name="MaxFALL_Original" minOccurs="0" maxOccurs="1" type="xsd:float"/>
             <xsd:element name="MaxFALL_Original_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxFALL_Original_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MaxFALL_Source" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="MaxFALL_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Menu_Codec_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="MenuCount" minOccurs="0" maxOccurs="1" type="xsd:integer"/>
             <xsd:element name="Menu_Format_List" minOccurs="0" maxOccurs="1" type="xsd:string"/>
