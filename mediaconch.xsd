@@ -35,6 +35,8 @@
             <xsd:element name="check"       type="checkType"  minOccurs="0" maxOccurs="unbounded" />
         </xsd:sequence>
         <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="info_count" />
+        <xsd:attribute   name="warn_count" />
         <xsd:attribute   name="fail_count" />
         <xsd:attribute   name="checks_run" />
         <xsd:attribute   name="version" />
@@ -62,6 +64,8 @@
         <xsd:attribute   name="name" />
         <xsd:attribute   name="version" />
         <xsd:attribute   name="pass_count" />
+        <xsd:attribute   name="info_count" />
+        <xsd:attribute   name="warn_count" />
         <xsd:attribute   name="fail_count" />
         <xsd:attribute   name="tests_run" />
     </xsd:complexType>
