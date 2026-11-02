@@ -180,6 +180,7 @@
             <xsd:element name="Compilation_String" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CompleteName_Last" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="CompleteName" minOccurs="0" maxOccurs="1" type="xsd:string"/>
+            <xsd:element name="CompliantWith" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer_Nationality" minOccurs="0" maxOccurs="1" type="xsd:string"/>
             <xsd:element name="Composer_Sort" minOccurs="0" maxOccurs="1" type="xsd:string"/>
